@@ -1,0 +1,22 @@
+[project]
+name = "kac-checker"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "meghana334",email = "meghanayabaku@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy (>=2.2,<3.0)",
+    "pillow (>=12.0.0,<13.0.0)",
+    "opencv-python (>=4.12.0.88,<5.0.0.0)",
+    "pytesseract (>=0.3.13,<0.4.0)",
+    "pydantic (>=2.12.4,<3.0.0)",
+    "rich (>=14.2.0,<15.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
