@@ -3,9 +3,18 @@ import numpy as np
 import pytesseract
 import os
 import logging
+import base64
+import json
 from datetime import datetime
 from pydantic import BaseModel, Field, validator
+from dotenv import load_dotenv
+from mistralai import Mistral
 
+# ---------------------------
+# Load Environment Variables
+# ---------------------------
+load_dotenv()
+API_KEY = os.getenv("MISTRAL_API_KEY")
 
 # ---------------------------
 # Logging Configuration
@@ -52,6 +61,12 @@ class ImageAudit:
             raise ValueError("Failed to load image. Unsupported format or corrupt file.")
 
         logger.info(f"Loaded image: {self.path}")
+        
+        if not API_KEY:
+            logger.warning("MISTRAL_API_KEY not found in environment variables. Mistral features will be disabled.")
+            self.mistral_client = None
+        else:
+            self.mistral_client = Mistral(api_key=API_KEY)
 
     # ---- metric functions ---- #
 
@@ -91,30 +106,59 @@ class ImageAudit:
         logger.info(f"Entropy: {val}")
         return val
 
-    def compute_ocr(self):
-        # gray = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
-        # text = pytesseract.image_to_string(gray)
-        # logger.info(f"OCR Extracted Text: {text.strip() if text.strip() else '[None]'}")
-        return "text ocr  is turned off"
+    def encode_image(self):
+        """Encode image to base64 for Mistral API."""
+        with open(self.path, "rb") as image_file:
+            return base64.b64encode(image_file.read()).decode('utf-8')
 
-    def compute_text_contrast(self, text):
-        gray = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
+    def analyze_with_mistral(self):
+        """Use Mistral VLM to analyze text and accessibility."""
+        if not self.mistral_client:
+            return {"error": "Mistral API key not configured"}
+            
+        logger.info("Sending image to Mistral for analysis...")
+        base64_image = self.encode_image()
+        
+        prompt = """
+        Analyze this image for accessibility and content. Provide a JSON response with the following keys:
+        
+        1. "ocr_text": Transcribe all visible text in the image.
+        2. "text_contrast": Evaluate the contrast between text and background. Is it sufficient? (Low/Medium/High/Sufficient/Insufficient).
+        3. "non_text_contrast": Evaluate the contrast of essential visual elements (icons, borders, focus indicators) against adjacent colors. Is it at least 3:1? (Pass/Fail/Not Applicable).
+        4. "font_size_readability": Assess font size and general readability.
+        5. "focus_visibility": Are there clear visual indicators for focus states (if applicable)?
+        6. "touch_target_size": Do interactive elements appear large enough for touch?
+        7. "image_based_text": Is this an image of text that should be real text? (Yes/No).
+        8. "visual_error_indicators": Are there any error states shown?
+        9. "chart_legibility": If charts/graphs are present, are they legible and labeled?
+        10. "alt_text_suggestion": Suggest a descriptive alt text for this image.
+        11. "wcag_violations": List potential WCAG violations found.
+        
+        Return ONLY valid JSON.
+        """
 
-        if not text:
-            logger.info("No OCR text found. Skipping text contrast.")
-            return None
-
-        mean_intensity = float(np.mean(gray))
-        text_pixels = gray[gray < mean_intensity]
-
-        if len(text_pixels) == 0:
-            return None
-
-        text_intensity = float(np.mean(text_pixels))
-        contrast = abs(text_intensity - mean_intensity) / (mean_intensity + 1e-6)
-
-        logger.info(f"Text Contrast Ratio (simple local estimate): {contrast}")
-        return contrast
+        try:
+            chat_response = self.mistral_client.chat.complete(
+                model="pixtral-12b-2409",
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": prompt},
+                            {"type": "image_url", "image_url": f"data:image/jpeg;base64,{base64_image}"}
+                        ]
+                    }
+                ],
+                response_format={"type": "json_object"}
+            )
+            
+            content = chat_response.choices[0].message.content
+            logger.info("Mistral analysis complete.")
+            return json.loads(content)
+            
+        except Exception as e:
+            logger.error(f"Mistral analysis failed: {e}")
+            return {"error": str(e)}
 
     # ---- main analysis wrapper ---- #
 
@@ -125,14 +169,15 @@ class ImageAudit:
         logger.info(f"Image Dimensions: {w}x{h}")
         logger.info(f"File Size: {file_size} bytes")
 
-        # Extract metrics
+        # Extract cv2 metrics
         blur = self.compute_blur()
         brightness = self.compute_brightness()
         sharpness = self.compute_sharpness()
         colorfulness = self.compute_colorfulness()
         entropy = self.compute_entropy()
-        text = self.compute_ocr()
-        # text_contrast = self.compute_text_contrast(text)
+        
+        # Mistral Analysis
+        mistral_results = self.analyze_with_mistral()
 
         return {
             "path": self.path,
@@ -144,9 +189,9 @@ class ImageAudit:
             "sharpness": sharpness,
             "colorfulness": colorfulness,
             "entropy": entropy,
-            "ocr_text": text,
-            # "text_contrast": text_contrast,
+            "mistral_analysis": mistral_results
         }
+        
     # ---------------------------
     # Threshold Checker
     # ---------------------------
@@ -184,12 +229,7 @@ class ImageAudit:
                 "min": 3,     # very low detail
                 "max": 7.5,   # extremely complex image
                 "desc": "Entropy"
-            },
-            "text_contrast": {
-                "min": 3.0,   # WCAG minimum for large text
-                "max": 21.0,
-                "desc": "Text Contrast Ratio (WCAG)"
-            },
+            }
         }
 
         # ---- Check each metric ---- #
@@ -208,6 +248,26 @@ class ImageAudit:
                 warnings.append(
                     f"{th['desc']} is too HIGH ({val:.2f}). Recommended maximum is {th['max']}."
                 )
+                
+        # ---- Check Mistral Findings ---- #
+        mistral = metrics.get("mistral_analysis", {})
+        if "error" in mistral:
+            warnings.append(f"Mistral Analysis Failed: {mistral['error']}")
+        else:
+            if mistral.get("image_based_text") == "Yes":
+                 warnings.append("Potential WCAG 1.4.5 Violation: Image of text detected.")
+            
+            contrast = mistral.get("text_contrast", "").lower()
+            if "insufficient" in contrast or "low" in contrast:
+                 warnings.append(f"Text Contrast Issue: {mistral.get('text_contrast')}")
+                 
+            non_text_contrast = mistral.get("non_text_contrast", "").lower()
+            if "fail" in non_text_contrast:
+                 warnings.append(f"Non-Text Contrast Issue (WCAG 1.4.11): Detected failure for visual elements.")
+
+            wcag = mistral.get("wcag_violations", [])
+            if wcag:
+                warnings.append(f"WCAG Violations Detected: {wcag}")
 
         # If no problems
         if not warnings:
@@ -216,32 +276,96 @@ class ImageAudit:
         return {"status": "FAIL", "warnings": warnings}
 
 
-
-
-
 # ---------------------------
-# MAIN EXECUTION (No CLI)
+# MAIN EXECUTION (CLI Support)
 # ---------------------------
+
+def process_directory(directory_path: str):
+    """Process all images in a directory recursively and generate a report."""
+    results = []
+    
+    print(f"Scanning directory: {directory_path}...")
+    
+    image_extensions = {'.jpg', '.jpeg', '.png', '.webp', '.bmp'}
+    
+    for root, dirs, files in os.walk(directory_path):
+        for file in files:
+            if os.path.splitext(file)[1].lower() in image_extensions:
+                file_path = os.path.join(root, file)
+                print(f"\nProcessing: {file_path}")
+                
+                try:
+                    config = ImageAuditConfig(image_path=file_path)
+                    audit = ImageAudit(config)
+                    
+                    analysis = audit.analyze()
+                    threshold_report = audit.evaluate_thresholds(analysis)
+                    
+                    # Merge status into result
+                    analysis["threshold_status"] = threshold_report["status"]
+                    analysis["threshold_warnings"] = threshold_report["warnings"]
+                    
+                    results.append(analysis)
+                    
+                except Exception as e:
+                    logger.error(f"Failed to process {file_path}: {e}")
+                    results.append({
+                        "path": file_path,
+                        "error": str(e),
+                        "status": "ERROR"
+                    })
+
+    # Save consolidated report
+    report_path = os.path.join(directory_path, "audit_report.json")
+    with open(report_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2)
+        
+    print(f"\n=== BATCH ANALYSIS COMPLETE ===")
+    print(f"Processed {len(results)} images.")
+    print(f"Report saved to: {report_path}")
+    
+    # Print summary
+    pass_count = sum(1 for r in results if r.get("threshold_status") == "PASS")
+    fail_count = sum(1 for r in results if r.get("threshold_status") == "FAIL")
+    error_count = sum(1 for r in results if "error" in r)
+    
+    print(f"PASS: {pass_count}")
+    print(f"FAIL: {fail_count}")
+    print(f"ERRORS: {error_count}")
+
 
 if __name__ == "__main__":
-    # <<< CHANGE IMAGE HERE >>>
-    IMAGE_PATH = "ad_banner_1.jpeg"
-
-    config = ImageAuditConfig(image_path=IMAGE_PATH)
-    audit = ImageAudit(config)
-
-    result = audit.analyze()
-
-    threshold_report = audit.evaluate_thresholds(result)
-
-    print("\n=== IMAGE AUDIT REPORT ===")
-    for k, v in result.items():
-        print(f"{k}: {v}")
-
-    print("\n=== THRESHOLD ANALYSIS ===")
-    print("Status:", threshold_report["status"])
-    if threshold_report["warnings"]:
-        for w in threshold_report["warnings"]:
-            print(" -", w)
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Visual Analyzer & Accessibility Auditor")
+    parser.add_argument("--path", type=str, help="Path to single image or directory", default="output")
+    
+    args = parser.parse_args()
+    target_path = args.path
+    
+    if os.path.isdir(target_path):
+        process_directory(target_path)
+    elif os.path.isfile(target_path):
+        # Single file mode (legacy behavior preserved but cleaned up)
+        print(f"Analyzing single file: {target_path}")
+        try:
+            config = ImageAuditConfig(image_path=target_path)
+            audit = ImageAudit(config)
+            result = audit.analyze()
+            threshold_report = audit.evaluate_thresholds(result)
+            
+            print("\n=== IMAGE AUDIT REPORT ===")
+            print(json.dumps(result, indent=2))
+            print("\n=== THRESHOLD ANALYSIS ===")
+            print("Status:", threshold_report["status"])
+            if threshold_report["warnings"]:
+                for w in threshold_report["warnings"]:
+                    print(" -", w)
+            else:
+                 print("All values are within recommended ranges.")
+        except Exception as e:
+            print(f"Error: {e}")
     else:
-        print("All values are within recommended ranges.")
+        print(f"Error: Path not found: {target_path}")
+        print("Usage: python visual_analyser.py --path <file_or_directory>")
+

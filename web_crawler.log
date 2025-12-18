@@ -1,0 +1,214 @@
+2025-12-10 12:05:04,382 | INFO | Created output directories in: /home/meghana/BlueCaffeine/KAC_Checker/output
+2025-12-10 12:05:04,383 | INFO | Starting crawl of: https://www.kao.com/global/en/
+2025-12-10 12:05:05,755 | INFO | Navigating to https://www.kao.com/global/en/...
+2025-12-10 12:06:05,760 | ERROR | Error during crawl: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.kao.com/global/en/", waiting until "networkidle"
+Traceback (most recent call last):
+  File "/home/meghana/BlueCaffeine/KAC_Checker/web_crawler.py", line 314, in crawl
+    await page.goto(self.url, wait_until="networkidle", timeout=60000)
+  File "/home/meghana/miniconda3/lib/python3.13/site-packages/playwright/async_api/_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "/home/meghana/miniconda3/lib/python3.13/site-packages/playwright/_impl/_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/meghana/miniconda3/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "/home/meghana/miniconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/meghana/miniconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.kao.com/global/en/", waiting until "networkidle"
+
+2025-12-10 12:08:01,170 | INFO | Created output directories in: /home/meghana/BlueCaffeine/KAC_Checker/output
+2025-12-10 12:08:01,170 | INFO | Starting crawl of: https://www.kao.com/global/en/
+2025-12-10 12:08:01,958 | INFO | Navigating to https://www.kao.com/global/en/...
+2025-12-10 12:08:08,743 | INFO | Page loaded successfully
+2025-12-10 12:08:11,746 | INFO | Extracting <img> elements...
+2025-12-10 12:08:11,839 | INFO | Found 44 image elements
+2025-12-10 12:08:12,284 | INFO | Captured: img_000_kao.png
+2025-12-10 12:08:12,436 | INFO | Captured: img_001_kirei_making_life_beautiful.png
+2025-12-10 12:08:12,637 | INFO | Captured: img_002_unnamed.png
+2025-12-10 12:08:12,835 | INFO | Captured: img_003_unnamed.png
+2025-12-10 12:08:13,009 | INFO | Captured: img_004_unnamed.png
+2025-12-10 12:08:13,194 | INFO | Captured: img_005_unnamed.png
+2025-12-10 12:08:13,369 | INFO | Captured: img_006_unnamed.png
+2025-12-10 12:08:14,416 | INFO | Captured: img_007_unnamed.png
+2025-12-10 12:08:15,113 | INFO | Captured: img_008_unnamed.png
+2025-12-10 12:08:15,923 | INFO | Captured: img_009_unnamed.png
+2025-12-10 12:08:17,200 | INFO | Captured: img_010_unnamed.png
+2025-12-10 12:08:17,474 | INFO | Captured: img_011_unnamed.png
+2025-12-10 12:08:17,620 | INFO | Captured: img_012_unnamed.png
+2025-12-10 12:08:17,785 | INFO | Captured: img_013_unnamed.png
+2025-12-10 12:08:17,920 | INFO | Captured: img_014_unnamed.png
+2025-12-10 12:08:18,037 | INFO | Captured: img_015_unnamed.png
+2025-12-10 12:08:18,169 | INFO | Captured: img_016_unnamed.png
+2025-12-10 12:08:18,369 | INFO | Captured: img_017_unnamed.png
+2025-12-10 12:08:18,519 | INFO | Captured: img_018_unnamed.png
+2025-12-10 12:08:19,579 | INFO | Captured: img_019_unnamed.png
+2025-12-10 12:08:19,739 | INFO | Captured: img_020_unnamed.png
+2025-12-10 12:08:19,916 | INFO | Captured: img_021_unnamed.png
+2025-12-10 12:08:20,069 | INFO | Captured: img_022_unnamed.png
+2025-12-10 12:08:20,200 | INFO | Captured: img_023_unnamed.png
+2025-12-10 12:08:20,337 | INFO | Captured: img_024_unnamed.png
+2025-12-10 12:08:20,519 | INFO | Captured: img_025_unnamed.png
+2025-12-10 12:08:20,746 | INFO | Captured: img_026_unnamed.png
+2025-12-10 12:08:21,026 | INFO | Captured: img_027_unnamed.png
+2025-12-10 12:08:21,238 | INFO | Captured: img_028_unnamed.png
+2025-12-10 12:08:21,411 | INFO | Captured: img_029_unnamed.png
+2025-12-10 12:08:21,639 | INFO | Captured: img_030_unnamed.png
+2025-12-10 12:08:22,087 | INFO | Captured: img_031_unnamed.png
+2025-12-10 12:08:22,619 | INFO | Captured: img_033_unnamed.png
+2025-12-10 12:08:23,117 | INFO | Captured: img_035_unnamed.png
+2025-12-10 12:08:23,267 | INFO | Captured: img_036_unnamed.png
+2025-12-10 12:08:23,450 | INFO | Captured: img_037_unnamed.png
+2025-12-10 12:08:23,599 | INFO | Captured: img_038_unnamed.png
+2025-12-10 12:08:23,734 | INFO | Captured: img_039_unnamed.png
+2025-12-10 12:08:23,896 | INFO | Captured: img_040_unnamed.png
+2025-12-10 12:08:24,031 | INFO | Captured: img_041_kao_group.png
+2025-12-10 12:08:24,174 | INFO | Extracting <svg> elements...
+2025-12-10 12:08:24,187 | INFO | Found 6 SVG elements
+2025-12-10 12:08:24,296 | INFO | Captured: svg_000_unnamed.png
+2025-12-10 12:08:24,413 | INFO | Captured: svg_001_unnamed.png
+2025-12-10 12:08:24,531 | INFO | Extracting icon elements...
+2025-12-10 12:08:24,576 | INFO | Found 11 icon elements
+2025-12-10 12:08:24,682 | INFO | Captured: icon_000_unnamed.png
+2025-12-10 12:08:25,394 | INFO | Captured: icon_001_unnamed.png
+2025-12-10 12:08:25,820 | INFO | Captured: icon_003_unnamed.png
+2025-12-10 12:08:25,948 | INFO | Captured: icon_004_unnamed.png
+2025-12-10 12:08:26,068 | INFO | Captured: icon_005_unnamed.png
+2025-12-10 12:08:26,199 | INFO | Captured: icon_006_unnamed.png
+2025-12-10 12:08:26,352 | INFO | Captured: icon_007_unnamed.png
+2025-12-10 12:08:26,498 | INFO | Captured: icon_008_unnamed.png
+2025-12-10 12:08:26,632 | INFO | Captured: icon_009_unnamed.png
+2025-12-10 12:08:26,664 | INFO | Extracting elements with background images...
+2025-12-10 12:08:26,994 | INFO | Checking 520 elements for background images
+2025-12-10 12:08:27,547 | INFO | Captured: background_000_unnamed.png
+2025-12-10 12:08:28,705 | INFO | Found 1 background images
+2025-12-10 12:08:28,706 | INFO | Saved manifest to: output/manifest.json
+2025-12-10 12:08:28,706 | INFO | ✓ Crawl complete! Captured 52 screenshots
+2025-12-10 12:14:34,327 | INFO | Created output directories in: /home/meghana/BlueCaffeine/KAC_Checker/output
+2025-12-10 12:14:34,327 | INFO | Starting crawl of: https://www.kao.com/global/en/
+2025-12-10 12:14:35,073 | INFO | Navigating to https://www.kao.com/global/en/...
+2025-12-10 12:14:44,984 | INFO | Page loaded successfully
+2025-12-10 12:14:47,987 | INFO | Extracting <img> elements...
+2025-12-10 12:14:48,052 | INFO | Found 44 image elements
+2025-12-10 12:14:48,198 | INFO | Captured: img_000_kao.png
+2025-12-10 12:14:49,430 | INFO | Captured: img_001_kirei_making_life_beautiful.png
+2025-12-10 12:14:50,564 | INFO | Captured: img_002_unnamed.png
+2025-12-10 12:15:00,247 | INFO | Captured: img_003_unnamed.png
+2025-12-10 12:15:03,917 | INFO | Captured: img_004_unnamed.png
+2025-12-10 12:15:08,202 | INFO | Captured: img_005_unnamed.png
+2025-12-10 12:15:12,137 | INFO | Captured: img_006_unnamed.png
+2025-12-10 12:15:15,758 | INFO | Captured: img_007_unnamed.png
+2025-12-10 12:15:19,828 | INFO | Captured: img_008_unnamed.png
+2025-12-10 12:15:24,759 | INFO | Captured: img_009_unnamed.png
+2025-12-10 12:15:25,691 | INFO | Captured: img_010_unnamed.png
+2025-12-10 12:15:26,471 | INFO | Captured: img_011_unnamed.png
+2025-12-10 12:15:27,000 | INFO | Captured: img_012_unnamed.png
+2025-12-10 12:15:27,137 | INFO | Captured: img_013_unnamed.png
+2025-12-10 12:15:27,285 | INFO | Captured: img_014_unnamed.png
+2025-12-10 12:15:27,429 | INFO | Captured: img_015_unnamed.png
+2025-12-10 12:15:27,700 | INFO | Captured: img_016_unnamed.png
+2025-12-10 12:15:27,862 | INFO | Captured: img_017_unnamed.png
+2025-12-10 12:15:28,088 | INFO | Captured: img_018_unnamed.png
+2025-12-10 12:15:28,399 | INFO | Captured: img_019_unnamed.png
+2025-12-10 12:15:29,051 | INFO | Captured: img_020_unnamed.png
+2025-12-10 12:15:29,595 | INFO | Captured: img_021_unnamed.png
+2025-12-10 12:15:29,797 | INFO | Captured: img_022_unnamed.png
+2025-12-10 12:15:29,958 | INFO | Captured: img_023_unnamed.png
+2025-12-10 12:15:30,201 | INFO | Captured: img_024_kao_group.png
+2025-12-10 12:15:30,398 | INFO | Captured 25 unique images, skipped 15 duplicates
+2025-12-10 12:15:30,399 | INFO | Extracting <svg> elements...
+2025-12-10 12:15:30,429 | INFO | Found 6 SVG elements
+2025-12-10 12:15:30,600 | INFO | Captured: svg_000_unnamed.png
+2025-12-10 12:15:30,756 | INFO | Captured: svg_001_unnamed.png
+2025-12-10 12:15:30,878 | INFO | Captured 2 unique SVGs, skipped 0 duplicates
+2025-12-10 12:15:30,879 | INFO | Extracting icon elements...
+2025-12-10 12:15:30,932 | INFO | Found 11 icon elements
+2025-12-10 12:15:31,035 | INFO | Captured: icon_000_unnamed.png
+2025-12-10 12:15:32,073 | INFO | Captured: icon_001_unnamed.png
+2025-12-10 12:15:32,903 | INFO | Captured: icon_002_unnamed.png
+2025-12-10 12:15:33,097 | INFO | Captured: icon_003_unnamed.png
+2025-12-10 12:15:33,214 | INFO | Captured: icon_004_unnamed.png
+2025-12-10 12:15:33,258 | INFO | Captured 5 unique icons, skipped 5 duplicates
+2025-12-10 12:15:33,258 | INFO | Extracting elements with background images...
+2025-12-10 12:15:33,728 | INFO | Checking 520 elements for background images
+2025-12-10 12:15:34,528 | INFO | Captured: background_000_unnamed.png
+2025-12-10 12:15:35,453 | INFO | Captured 1 unique backgrounds, skipped 1 duplicates
+2025-12-10 12:15:35,454 | INFO | Saved manifest to: output/manifest.json
+2025-12-10 12:15:35,454 | INFO | ✓ Crawl complete! Captured 33 screenshots
+2025-12-10 13:07:04,899 | INFO | Created output directories in: /home/meghana/BlueCaffeine/KAC_Checker/output
+2025-12-10 13:07:04,899 | INFO | Starting crawl of: https://www.kao.com/global/en/
+2025-12-10 13:07:05,412 | INFO | Navigating to https://www.kao.com/global/en/...
+2025-12-10 13:07:14,434 | INFO | Page loaded successfully
+2025-12-10 13:07:17,436 | INFO | Extracting <img> elements...
+2025-12-10 13:07:17,503 | INFO | Found 42 image elements
+2025-12-10 13:07:17,763 | INFO | Captured: img_000_kao.png
+2025-12-10 13:07:17,907 | INFO | Captured: img_001_kirei_making_life_beautiful.png
+2025-12-10 13:07:18,090 | INFO | Captured: img_002_unnamed.png
+2025-12-10 13:07:18,246 | INFO | Captured: img_003_unnamed.png
+2025-12-10 13:07:18,429 | INFO | Captured: img_004_unnamed.png
+2025-12-10 13:07:18,582 | INFO | Captured: img_005_unnamed.png
+2025-12-10 13:07:18,738 | INFO | Captured: img_006_unnamed.png
+2025-12-10 13:07:18,870 | INFO | Captured: img_007_unnamed.png
+2025-12-10 13:07:19,010 | INFO | Captured: img_008_unnamed.png
+2025-12-10 13:07:19,162 | INFO | Captured: img_009_unnamed.png
+2025-12-10 13:07:19,413 | INFO | Captured: img_010_unnamed.png
+2025-12-10 13:07:20,456 | INFO | Captured: img_011_unnamed.png
+2025-12-10 13:07:20,574 | INFO | Captured: img_012_unnamed.png
+2025-12-10 13:07:20,691 | INFO | Captured: img_013_unnamed.png
+2025-12-10 13:07:20,820 | INFO | Captured: img_014_unnamed.png
+2025-12-10 13:07:20,991 | INFO | Captured: img_015_unnamed.png
+2025-12-10 13:07:21,365 | INFO | Captured: img_016_unnamed.png
+2025-12-10 13:07:21,531 | INFO | Captured: img_017_unnamed.png
+2025-12-10 13:07:21,729 | INFO | Captured: img_018_unnamed.png
+2025-12-10 13:07:21,939 | INFO | Captured: img_019_unnamed.png
+2025-12-10 13:07:22,478 | INFO | Captured: img_020_unnamed.png
+2025-12-10 13:07:23,056 | INFO | Captured: img_021_unnamed.png
+2025-12-10 13:07:23,221 | INFO | Captured: img_022_unnamed.png
+2025-12-10 13:07:23,344 | INFO | Captured: img_023_unnamed.png
+2025-12-10 13:07:23,573 | INFO | Captured: img_024_kao_group.png
+2025-12-10 13:07:23,573 | INFO | Captured 25 unique images, skipped 15 duplicates
+2025-12-10 13:07:23,574 | INFO | Extracting <svg> elements...
+2025-12-10 13:07:23,619 | INFO | Found 6 SVG elements
+2025-12-10 13:07:23,726 | INFO | Captured: svg_000_unnamed.png
+2025-12-10 13:07:23,906 | INFO | Captured: svg_001_unnamed.png
+2025-12-10 13:07:24,002 | INFO | Captured 2 unique SVGs, skipped 0 duplicates
+2025-12-10 13:07:24,003 | INFO | Extracting icon elements...
+2025-12-10 13:07:24,045 | INFO | Found 11 icon elements
+2025-12-10 13:07:24,160 | INFO | Captured: icon_000_unnamed.png
+2025-12-10 13:07:24,452 | INFO | Captured: icon_001_unnamed.png
+2025-12-10 13:07:24,780 | INFO | Captured: icon_002_unnamed.png
+2025-12-10 13:07:25,073 | INFO | Captured: icon_003_unnamed.png
+2025-12-10 13:07:25,176 | INFO | Captured: icon_004_unnamed.png
+2025-12-10 13:07:25,227 | INFO | Captured 5 unique icons, skipped 5 duplicates
+2025-12-10 13:07:25,228 | INFO | Extracting elements with background images...
+2025-12-10 13:07:25,570 | INFO | Checking 520 elements for background images
+2025-12-10 13:07:25,705 | INFO | Captured: background_000_unnamed.png
+2025-12-10 13:07:27,081 | INFO | Captured 1 unique backgrounds, skipped 1 duplicates
+2025-12-10 13:07:27,081 | INFO | Extracting button elements...
+2025-12-10 13:07:27,125 | INFO | Found 36 button elements
+2025-12-10 13:07:27,456 | INFO | Captured: button_000_unnamed.png
+2025-12-10 13:07:27,607 | INFO | Captured: button_001_unnamed.png
+2025-12-10 13:07:27,744 | INFO | Captured: button_002_unnamed.png
+2025-12-10 13:07:28,012 | INFO | Captured: button_003_unnamed.png
+2025-12-10 13:07:28,292 | INFO | Captured: button_004_unnamed.png
+2025-12-10 13:07:28,405 | INFO | Captured: button_005_unnamed.png
+2025-12-10 13:07:28,520 | INFO | Captured: button_006_unnamed.png
+2025-12-10 13:07:28,620 | INFO | Captured: button_007_unnamed.png
+2025-12-10 13:07:28,737 | INFO | Captured: button_008_unnamed.png
+2025-12-10 13:07:28,873 | INFO | Captured: button_009_unnamed.png
+2025-12-10 13:07:29,268 | INFO | Captured 10 unique buttons, skipped 3 duplicates
+2025-12-10 13:07:29,269 | INFO | Saved manifest to: output/manifest.json
+2025-12-10 13:07:29,269 | INFO | ✓ Crawl complete! Captured 43 screenshots

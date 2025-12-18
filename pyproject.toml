@@ -13,7 +13,10 @@ dependencies = [
     "opencv-python (>=4.12.0.88,<5.0.0.0)",
     "pytesseract (>=0.3.13,<0.4.0)",
     "pydantic (>=2.12.4,<3.0.0)",
-    "rich (>=14.2.0,<15.0.0)"
+    "rich (>=14.2.0,<15.0.0)",
+    "playwright (>=1.40.0,<2.0.0)",
+    "mistralai (>=1.10.0,<2.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
 ]
 
 

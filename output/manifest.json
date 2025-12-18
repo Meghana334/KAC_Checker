@@ -1,0 +1,419 @@
+{
+  "url": "https://www.kao.com/global/en/",
+  "timestamp": "2025-12-10T13:07:29.268890",
+  "total_screenshots": 43,
+  "elements": [
+    {
+      "type": "img",
+      "index": 0,
+      "src": "/content/dam/sites/kao/inc-common/kao_global_header_logo.png",
+      "alt": "kao",
+      "title": "",
+      "width": "",
+      "height": "",
+      "screenshot": "images/img_000_kao.png"
+    },
+    {
+      "type": "img",
+      "index": 1,
+      "src": "/content/dam/sites/kao/www-kao-com/global/en/index/img-slogan-en.svg",
+      "alt": "Kirei-Making Life Beautiful",
+      "title": "",
+      "width": "",
+      "height": "",
+      "screenshot": "images/img_001_kirei_making_life_beautiful.png"
+    },
+    {
+      "type": "img",
+      "index": 2,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/showReel01.png?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1400",
+      "screenshot": "images/img_002_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 3,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/showReel02.png?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1400",
+      "screenshot": "images/img_003_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 4,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/showReel03.png?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1400",
+      "screenshot": "images/img_004_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 5,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/showReel04.png?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1400",
+      "screenshot": "images/img_005_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 6,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/showReel05.png?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1400",
+      "screenshot": "images/img_006_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 7,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/showReel06.png?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1400",
+      "screenshot": "images/img_007_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 8,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/showReel07.png?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1400",
+      "screenshot": "images/img_008_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 9,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/showReel08.png?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1400",
+      "screenshot": "images/img_009_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 10,
+      "src": "/content/dam/sites/kao/www-kao-com/jp/ja/corporate/common/pageTitle-bg-index-lg.png",
+      "alt": "",
+      "title": "",
+      "width": "",
+      "height": "",
+      "screenshot": "images/img_010_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 11,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/global/en/index/topix-1-10_202508.jpg?fmt=webp-alpha&wid=810",
+      "alt": "",
+      "title": "",
+      "width": "405",
+      "height": "270",
+      "screenshot": "images/img_011_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 12,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/global/en/index/topix-1-27.jpg\n?fmt=webp-alpha&wid=810",
+      "alt": "",
+      "title": "",
+      "width": "405",
+      "height": "270",
+      "screenshot": "images/img_012_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 13,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/global/en/index/topix-1-25.jpg\n?fmt=webp-alpha&wid=810",
+      "alt": "",
+      "title": "",
+      "width": "405",
+      "height": "270",
+      "screenshot": "images/img_013_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 14,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/global/en/index/topix-1-11_202506.jpg\n?fmt=webp-alpha&wid=810",
+      "alt": "",
+      "title": "",
+      "width": "405",
+      "height": "270",
+      "screenshot": "images/img_014_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 15,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/global/en/index/topix-1-12_202506.jpg\n?fmt=webp-alpha&wid=810",
+      "alt": "",
+      "title": "",
+      "width": "405",
+      "height": "270",
+      "screenshot": "images/img_015_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 16,
+      "src": "//kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/index-img-01-lg.jpg?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "1728",
+      "height": "864",
+      "screenshot": "images/img_016_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 17,
+      "src": "//kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/index-img-02-lg.jpg?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "1728",
+      "height": "864",
+      "screenshot": "images/img_017_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 18,
+      "src": "//kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/index-img-03-lg_202501.jpg?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "1728",
+      "height": "864",
+      "screenshot": "images/img_018_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 19,
+      "src": "//kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/index-img-04-lg.jpg?fmt=webp",
+      "alt": "",
+      "title": "",
+      "width": "1728",
+      "height": "864",
+      "screenshot": "images/img_019_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 20,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/index-img-05-lg.jpg?fmt=webp&wid=2880",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "1440",
+      "screenshot": "images/img_020_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 21,
+      "src": "/is/image/content/dam/sites/kao/www-kao-com/jp/ja/index/index-bg-02.png?fmt=webp-alpha&wid=2880",
+      "alt": "",
+      "title": "",
+      "width": "2880",
+      "height": "720",
+      "screenshot": "images/img_021_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 22,
+      "src": "/content/dam/sites/kao/www-kao-com/global/en/news/2025/imgs/20251210-001-01_thumb_3_2.jpg",
+      "alt": "",
+      "title": "",
+      "width": "",
+      "height": "",
+      "screenshot": "images/img_022_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 23,
+      "src": "/content/dam/sites/kao/www-kao-com/global/en/newsroom/common_ogp3_2.jpg",
+      "alt": "",
+      "title": "",
+      "width": "",
+      "height": "",
+      "screenshot": "images/img_023_unnamed.png"
+    },
+    {
+      "type": "img",
+      "index": 24,
+      "src": "/content/dam/sites/kao/inc-common/gl_header_logo_global.png",
+      "alt": "KAO Group",
+      "title": "",
+      "width": "70",
+      "height": "",
+      "screenshot": "images/img_024_kao_group.png"
+    },
+    {
+      "type": "svg",
+      "index": 0,
+      "aria_label": "",
+      "role": "",
+      "class": "corpCommon-showReel__pause--icon",
+      "screenshot": "svg/svg_000_unnamed.png"
+    },
+    {
+      "type": "svg",
+      "index": 1,
+      "aria_label": "",
+      "role": "",
+      "class": "corpCommon-showReel__button--icon",
+      "screenshot": "svg/svg_001_unnamed.png"
+    },
+    {
+      "type": "icon",
+      "index": 0,
+      "class": "kao-icon kao-icon--globe",
+      "aria_label": "",
+      "title": "",
+      "screenshot": "icons/icon_000_unnamed.png"
+    },
+    {
+      "type": "icon",
+      "index": 1,
+      "class": "kao-icon kao-icon--search",
+      "aria_label": "",
+      "title": "",
+      "screenshot": "icons/icon_001_unnamed.png"
+    },
+    {
+      "type": "icon",
+      "index": 2,
+      "class": "cmn-icon g-NewsIndexUnit--v4__icon l-NewsIndexUnit--v4__icon cmn-icon--bullet",
+      "aria_label": "",
+      "title": "",
+      "screenshot": "icons/icon_002_unnamed.png"
+    },
+    {
+      "type": "icon",
+      "index": 3,
+      "class": "cmn-icon cmn-icon--bullet g-TextLinkUnit__link__icon l-TextLinkUnit__link__icon",
+      "aria_label": "",
+      "title": "",
+      "screenshot": "icons/icon_003_unnamed.png"
+    },
+    {
+      "type": "icon",
+      "index": 4,
+      "class": "cmn-icon cmn-icon--to_top g-PageTop__icon l-PageTop__icon",
+      "aria_label": "",
+      "title": "",
+      "screenshot": "icons/icon_004_unnamed.png"
+    },
+    {
+      "type": "background",
+      "index": 0,
+      "background_url": "https://cdn.cookielaw.org/logos/static/ot_close.svg",
+      "screenshot": "backgrounds/background_000_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 0,
+      "text": "",
+      "class": "corpCommon-showReel__pause",
+      "button_type": "button",
+      "value": "",
+      "aria_label": "\u52d5\u753b\u3092\u505c\u6b62\u3059\u308b",
+      "screenshot": "buttons/button_000_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 1,
+      "text": "Prev",
+      "class": "splide__arrow splide__arrow--prev corpCommon__carousel-arrow corpCommon__carousel-prev",
+      "button_type": "",
+      "value": "",
+      "aria_label": "Previous slide",
+      "screenshot": "buttons/button_001_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 2,
+      "text": "",
+      "class": "splide__pagination__page corpCommon__carousel-button",
+      "button_type": "button",
+      "value": "",
+      "aria_label": "Go to slide 1",
+      "screenshot": "buttons/button_002_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 3,
+      "text": "",
+      "class": "splide__pagination__page corpCommon__carousel-button is-active",
+      "button_type": "button",
+      "value": "",
+      "aria_label": "Go to slide 3",
+      "screenshot": "buttons/button_003_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 4,
+      "text": "Next",
+      "class": "splide__arrow splide__arrow--next corpCommon__carousel-arrow corpCommon__carousel-next",
+      "button_type": "",
+      "value": "",
+      "aria_label": "Next slide",
+      "screenshot": "buttons/button_004_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 5,
+      "text": "Pause",
+      "class": "splide__toggle corpCommon__carousel-toggle is-active",
+      "button_type": "button",
+      "value": "",
+      "aria_label": "Pause autoplay",
+      "screenshot": "buttons/button_005_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 6,
+      "text": "Cookies Settings",
+      "class": "cookie-setting-link",
+      "button_type": "",
+      "value": "",
+      "aria_label": "Cookies Settings, Opens the preference center dialog",
+      "screenshot": "buttons/button_006_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 7,
+      "text": "Reject All",
+      "class": "",
+      "button_type": "",
+      "value": "",
+      "aria_label": "",
+      "screenshot": "buttons/button_007_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 8,
+      "text": "Accept All Cookies",
+      "class": "",
+      "button_type": "",
+      "value": "",
+      "aria_label": "",
+      "screenshot": "buttons/button_008_unnamed.png"
+    },
+    {
+      "type": "button",
+      "index": 9,
+      "text": "",
+      "class": "onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon",
+      "button_type": "",
+      "value": "",
+      "aria_label": "Close",
+      "screenshot": "buttons/button_009_unnamed.png"
+    }
+  ]
+}

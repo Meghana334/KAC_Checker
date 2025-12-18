@@ -40,3 +40,960 @@
 2025-11-20 11:36:11,078 | INFO | Sharpness (Tenengrad): 8321.69274414277
 2025-11-20 11:36:11,102 | INFO | Colorfulness: 41.30196806975671
 2025-11-20 11:36:11,107 | INFO | Entropy: 6.4466962814331055
+2025-12-18 10:47:36,124 | INFO | Loaded image: ad_banner_1.jpeg
+2025-12-18 10:47:36,329 | INFO | Image Dimensions: 1366x513
+2025-12-18 10:47:36,329 | INFO | File Size: 173161 bytes
+2025-12-18 10:47:36,339 | INFO | Blur (Variance of Laplacian): 588.1786862670587
+2025-12-18 10:47:36,340 | INFO | Brightness: 205.17165697715902
+2025-12-18 10:47:36,357 | INFO | Sharpness (Tenengrad): 8321.69274414277
+2025-12-18 10:47:36,389 | INFO | Colorfulness: 41.30196806975671
+2025-12-18 10:47:36,394 | INFO | Entropy: 6.4466962814331055
+2025-12-18 10:47:36,394 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:47:42,609 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:47:42,612 | INFO | Mistral analysis complete.
+2025-12-18 10:55:58,378 | INFO | Loaded image: output/images/img_018_unnamed.png
+2025-12-18 10:55:58,490 | INFO | Image Dimensions: 590x296
+2025-12-18 10:55:58,490 | INFO | File Size: 33787 bytes
+2025-12-18 10:55:58,494 | INFO | Blur (Variance of Laplacian): 0.6248088063142628
+2025-12-18 10:55:58,494 | INFO | Brightness: 253.83326843792946
+2025-12-18 10:55:58,497 | INFO | Sharpness (Tenengrad): 3.878469995419148
+2025-12-18 10:55:58,504 | INFO | Colorfulness: 0.6305888460133474
+2025-12-18 10:55:58,505 | INFO | Entropy: 1.9792860746383667
+2025-12-18 10:55:58,505 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:00,247 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:00,248 | INFO | Mistral analysis complete.
+2025-12-18 10:56:00,274 | INFO | Loaded image: output/images/img_021_unnamed.png
+2025-12-18 10:56:00,327 | INFO | Image Dimensions: 1920x361
+2025-12-18 10:56:00,327 | INFO | File Size: 390765 bytes
+2025-12-18 10:56:00,334 | INFO | Blur (Variance of Laplacian): 1435.8940177754976
+2025-12-18 10:56:00,335 | INFO | Brightness: 181.28218346029547
+2025-12-18 10:56:00,347 | INFO | Sharpness (Tenengrad): 9063.074189173592
+2025-12-18 10:56:00,376 | INFO | Colorfulness: 19.053483053890172
+2025-12-18 10:56:00,382 | INFO | Entropy: 5.944273948669434
+2025-12-18 10:56:00,383 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:04,486 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:04,487 | INFO | Mistral analysis complete.
+2025-12-18 10:56:04,500 | INFO | Loaded image: output/images/img_019_unnamed.png
+2025-12-18 10:56:04,558 | INFO | Image Dimensions: 590x296
+2025-12-18 10:56:04,559 | INFO | File Size: 132359 bytes
+2025-12-18 10:56:04,560 | INFO | Blur (Variance of Laplacian): 52.988749425819684
+2025-12-18 10:56:04,562 | INFO | Brightness: 240.4014544205222
+2025-12-18 10:56:04,564 | INFO | Sharpness (Tenengrad): 649.5264544205222
+2025-12-18 10:56:04,571 | INFO | Colorfulness: 7.090059770498706
+2025-12-18 10:56:04,572 | INFO | Entropy: 4.55870246887207
+2025-12-18 10:56:04,572 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:07,448 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:07,449 | INFO | Mistral analysis complete.
+2025-12-18 10:56:07,457 | INFO | Loaded image: output/images/img_024_kao_group.png
+2025-12-18 10:56:07,513 | INFO | Image Dimensions: 70x21
+2025-12-18 10:56:07,513 | INFO | File Size: 349 bytes
+2025-12-18 10:56:07,513 | INFO | Blur (Variance of Laplacian): 2761.747775926697
+2025-12-18 10:56:07,513 | INFO | Brightness: 252.1891156462585
+2025-12-18 10:56:07,513 | INFO | Sharpness (Tenengrad): 5818.574149659864
+2025-12-18 10:56:07,513 | INFO | Colorfulness: 0.0
+2025-12-18 10:56:07,514 | INFO | Entropy: 0.39334630966186523
+2025-12-18 10:56:07,514 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:09,935 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:09,937 | INFO | Mistral analysis complete.
+2025-12-18 10:56:09,966 | INFO | Loaded image: output/images/img_003_unnamed.png
+2025-12-18 10:56:10,020 | INFO | Image Dimensions: 1920x934
+2025-12-18 10:56:10,020 | INFO | File Size: 53520 bytes
+2025-12-18 10:56:10,037 | INFO | Blur (Variance of Laplacian): 338.981999387549
+2025-12-18 10:56:10,039 | INFO | Brightness: 244.7035476891506
+2025-12-18 10:56:10,062 | INFO | Sharpness (Tenengrad): 2221.039505264097
+2025-12-18 10:56:10,145 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 10:56:10,155 | INFO | Entropy: 0.7921188473701477
+2025-12-18 10:56:10,155 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:12,916 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:12,918 | INFO | Mistral analysis complete.
+2025-12-18 10:56:12,926 | INFO | Loaded image: output/images/img_022_unnamed.png
+2025-12-18 10:56:12,975 | INFO | Image Dimensions: 115x78
+2025-12-18 10:56:12,976 | INFO | File Size: 5931 bytes
+2025-12-18 10:56:12,976 | INFO | Blur (Variance of Laplacian): 1977.232800142678
+2025-12-18 10:56:12,976 | INFO | Brightness: 210.9664437012263
+2025-12-18 10:56:12,976 | INFO | Sharpness (Tenengrad): 19069.94960981048
+2025-12-18 10:56:12,977 | INFO | Colorfulness: 90.08283673883938
+2025-12-18 10:56:12,978 | INFO | Entropy: 2.69626784324646
+2025-12-18 10:56:12,978 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:14,750 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:14,757 | INFO | Mistral analysis complete.
+2025-12-18 10:56:14,758 | INFO | Loaded image: output/images/img_000_kao.png
+2025-12-18 10:56:14,817 | INFO | Image Dimensions: 90x26
+2025-12-18 10:56:14,817 | INFO | File Size: 1501 bytes
+2025-12-18 10:56:14,818 | INFO | Blur (Variance of Laplacian): 5960.959760391555
+2025-12-18 10:56:14,818 | INFO | Brightness: 204.42905982905984
+2025-12-18 10:56:14,818 | INFO | Sharpness (Tenengrad): 79813.95042735043
+2025-12-18 10:56:14,818 | INFO | Colorfulness: 105.13700819146887
+2025-12-18 10:56:14,819 | INFO | Entropy: 2.1708943843841553
+2025-12-18 10:56:14,819 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:15,772 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:15,774 | INFO | Mistral analysis complete.
+2025-12-18 10:56:15,784 | INFO | Loaded image: output/images/img_010_unnamed.png
+2025-12-18 10:56:15,845 | INFO | Image Dimensions: 1920x78
+2025-12-18 10:56:15,845 | INFO | File Size: 26878 bytes
+2025-12-18 10:56:15,847 | INFO | Blur (Variance of Laplacian): 6159.974145299146
+2025-12-18 10:56:15,847 | INFO | Brightness: 232.83164396367522
+2025-12-18 10:56:15,849 | INFO | Sharpness (Tenengrad): 34478.02267628205
+2025-12-18 10:56:15,853 | INFO | Colorfulness: 26.228471120439046
+2025-12-18 10:56:15,854 | INFO | Entropy: 1.6123872995376587
+2025-12-18 10:56:15,854 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:19,663 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:19,664 | INFO | Mistral analysis complete.
+2025-12-18 10:56:19,695 | INFO | Loaded image: output/images/img_002_unnamed.png
+2025-12-18 10:56:19,751 | INFO | Image Dimensions: 1920x934
+2025-12-18 10:56:19,752 | INFO | File Size: 53520 bytes
+2025-12-18 10:56:19,766 | INFO | Blur (Variance of Laplacian): 338.981999387549
+2025-12-18 10:56:19,768 | INFO | Brightness: 244.7035476891506
+2025-12-18 10:56:19,789 | INFO | Sharpness (Tenengrad): 2221.039505264097
+2025-12-18 10:56:19,870 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 10:56:19,879 | INFO | Entropy: 0.7921188473701477
+2025-12-18 10:56:19,880 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:23,145 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:23,147 | INFO | Mistral analysis complete.
+2025-12-18 10:56:23,156 | INFO | Loaded image: output/images/img_001_kirei_making_life_beautiful.png
+2025-12-18 10:56:23,209 | INFO | Image Dimensions: 700x52
+2025-12-18 10:56:23,209 | INFO | File Size: 22364 bytes
+2025-12-18 10:56:23,209 | INFO | Blur (Variance of Laplacian): 774.8765814394396
+2025-12-18 10:56:23,209 | INFO | Brightness: 235.31277472527472
+2025-12-18 10:56:23,210 | INFO | Sharpness (Tenengrad): 16707.793626373626
+2025-12-18 10:56:23,210 | INFO | Colorfulness: 25.13407468288489
+2025-12-18 10:56:23,211 | INFO | Entropy: 3.523881196975708
+2025-12-18 10:56:23,211 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:25,918 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:25,919 | INFO | Mistral analysis complete.
+2025-12-18 10:56:25,928 | INFO | Loaded image: output/images/img_013_unnamed.png
+2025-12-18 10:56:25,979 | INFO | Image Dimensions: 397x265
+2025-12-18 10:56:25,979 | INFO | File Size: 4051 bytes
+2025-12-18 10:56:25,979 | INFO | Blur (Variance of Laplacian): 87.42208623044046
+2025-12-18 10:56:25,980 | INFO | Brightness: 245.2256736847108
+2025-12-18 10:56:25,981 | INFO | Sharpness (Tenengrad): 1277.891354973623
+2025-12-18 10:56:25,982 | INFO | Colorfulness: 1.9977745329376289
+2025-12-18 10:56:25,983 | INFO | Entropy: 0.17292869091033936
+2025-12-18 10:56:25,983 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:27,242 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:27,243 | INFO | Mistral analysis complete.
+2025-12-18 10:56:27,280 | INFO | Loaded image: output/images/img_005_unnamed.png
+2025-12-18 10:56:27,342 | INFO | Image Dimensions: 1920x934
+2025-12-18 10:56:27,343 | INFO | File Size: 53820 bytes
+2025-12-18 10:56:27,360 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 10:56:27,362 | INFO | Brightness: 244.69653428354746
+2025-12-18 10:56:27,386 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 10:56:27,472 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 10:56:27,481 | INFO | Entropy: 0.792709469795227
+2025-12-18 10:56:27,481 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:28,982 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:28,983 | INFO | Mistral analysis complete.
+2025-12-18 10:56:28,995 | INFO | Loaded image: output/images/img_017_unnamed.png
+2025-12-18 10:56:29,052 | INFO | Image Dimensions: 590x296
+2025-12-18 10:56:29,053 | INFO | File Size: 132494 bytes
+2025-12-18 10:56:29,054 | INFO | Blur (Variance of Laplacian): 1139.472152061382
+2025-12-18 10:56:29,055 | INFO | Brightness: 213.0117727897389
+2025-12-18 10:56:29,057 | INFO | Sharpness (Tenengrad): 11176.724530462667
+2025-12-18 10:56:29,060 | INFO | Colorfulness: 30.077952457920492
+2025-12-18 10:56:29,063 | INFO | Entropy: 5.515491962432861
+2025-12-18 10:56:29,063 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:32,231 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:32,232 | INFO | Mistral analysis complete.
+2025-12-18 10:56:32,243 | INFO | Loaded image: output/images/img_015_unnamed.png
+2025-12-18 10:56:32,300 | INFO | Image Dimensions: 397x265
+2025-12-18 10:56:32,300 | INFO | File Size: 4496 bytes
+2025-12-18 10:56:32,301 | INFO | Blur (Variance of Laplacian): 374.00385242243226
+2025-12-18 10:56:32,301 | INFO | Brightness: 244.3986217385105
+2025-12-18 10:56:32,302 | INFO | Sharpness (Tenengrad): 5493.147892210446
+2025-12-18 10:56:32,303 | INFO | Colorfulness: 1.9899586338134694
+2025-12-18 10:56:32,304 | INFO | Entropy: 0.1810166835784912
+2025-12-18 10:56:32,304 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:33,385 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:33,424 | INFO | Mistral analysis complete.
+2025-12-18 10:56:33,457 | INFO | Loaded image: output/images/img_008_unnamed.png
+2025-12-18 10:56:33,511 | INFO | Image Dimensions: 1920x934
+2025-12-18 10:56:33,511 | INFO | File Size: 53820 bytes
+2025-12-18 10:56:33,524 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 10:56:33,527 | INFO | Brightness: 244.69653428354746
+2025-12-18 10:56:33,547 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 10:56:33,613 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 10:56:33,620 | INFO | Entropy: 0.792709469795227
+2025-12-18 10:56:33,620 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:36,355 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:36,356 | INFO | Mistral analysis complete.
+2025-12-18 10:56:36,366 | INFO | Loaded image: output/images/img_011_unnamed.png
+2025-12-18 10:56:36,417 | INFO | Image Dimensions: 396x264
+2025-12-18 10:56:36,417 | INFO | File Size: 1941 bytes
+2025-12-18 10:56:36,418 | INFO | Blur (Variance of Laplacian): 0.14686638532883345
+2025-12-18 10:56:36,418 | INFO | Brightness: 245.97445094888278
+2025-12-18 10:56:36,419 | INFO | Sharpness (Tenengrad): 1.8410238751147843
+2025-12-18 10:56:36,421 | INFO | Colorfulness: 2.0
+2025-12-18 10:56:36,422 | INFO | Entropy: 0.10217796266078949
+2025-12-18 10:56:36,422 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:38,109 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:38,110 | INFO | Mistral analysis complete.
+2025-12-18 10:56:38,118 | INFO | Loaded image: output/images/img_023_unnamed.png
+2025-12-18 10:56:38,169 | INFO | Image Dimensions: 115x77
+2025-12-18 10:56:38,169 | INFO | File Size: 4677 bytes
+2025-12-18 10:56:38,169 | INFO | Blur (Variance of Laplacian): 1334.8237152109668
+2025-12-18 10:56:38,169 | INFO | Brightness: 244.55742518351215
+2025-12-18 10:56:38,170 | INFO | Sharpness (Tenengrad): 18844.648221343872
+2025-12-18 10:56:38,170 | INFO | Colorfulness: 45.42685901584185
+2025-12-18 10:56:38,171 | INFO | Entropy: 1.9204747676849365
+2025-12-18 10:56:38,171 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:39,829 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:39,831 | INFO | Mistral analysis complete.
+2025-12-18 10:56:39,860 | INFO | Loaded image: output/images/img_006_unnamed.png
+2025-12-18 10:56:39,912 | INFO | Image Dimensions: 1920x934
+2025-12-18 10:56:39,912 | INFO | File Size: 53820 bytes
+2025-12-18 10:56:39,926 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 10:56:39,928 | INFO | Brightness: 244.69653428354746
+2025-12-18 10:56:39,950 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 10:56:40,019 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 10:56:40,027 | INFO | Entropy: 0.792709469795227
+2025-12-18 10:56:40,027 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:43,227 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:43,238 | INFO | Mistral analysis complete.
+2025-12-18 10:56:43,247 | INFO | Loaded image: output/images/img_014_unnamed.png
+2025-12-18 10:56:43,302 | INFO | Image Dimensions: 396x265
+2025-12-18 10:56:43,302 | INFO | File Size: 4272 bytes
+2025-12-18 10:56:43,303 | INFO | Blur (Variance of Laplacian): 200.82085335339502
+2025-12-18 10:56:43,303 | INFO | Brightness: 244.82776824852297
+2025-12-18 10:56:43,305 | INFO | Sharpness (Tenengrad): 3010.8756622832093
+2025-12-18 10:56:43,306 | INFO | Colorfulness: 1.9917712365284554
+2025-12-18 10:56:43,307 | INFO | Entropy: 0.17608317732810974
+2025-12-18 10:56:43,308 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:45,673 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:45,674 | INFO | Mistral analysis complete.
+2025-12-18 10:56:45,689 | INFO | Loaded image: output/images/img_012_unnamed.png
+2025-12-18 10:56:45,743 | INFO | Image Dimensions: 397x265
+2025-12-18 10:56:45,743 | INFO | File Size: 3356 bytes
+2025-12-18 10:56:45,744 | INFO | Blur (Variance of Laplacian): 12.113828385339978
+2025-12-18 10:56:45,744 | INFO | Brightness: 245.71221900099806
+2025-12-18 10:56:45,745 | INFO | Sharpness (Tenengrad): 174.95046813364385
+2025-12-18 10:56:45,747 | INFO | Colorfulness: 1.9995579569476885
+2025-12-18 10:56:45,749 | INFO | Entropy: 0.1552443653345108
+2025-12-18 10:56:45,749 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:48,029 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:48,031 | INFO | Mistral analysis complete.
+2025-12-18 10:56:48,043 | INFO | Loaded image: output/images/img_016_unnamed.png
+2025-12-18 10:56:48,106 | INFO | Image Dimensions: 590x296
+2025-12-18 10:56:48,106 | INFO | File Size: 124973 bytes
+2025-12-18 10:56:48,107 | INFO | Blur (Variance of Laplacian): 2369.9625277463333
+2025-12-18 10:56:48,107 | INFO | Brightness: 190.66550618415025
+2025-12-18 10:56:48,109 | INFO | Sharpness (Tenengrad): 11415.546953733394
+2025-12-18 10:56:48,114 | INFO | Colorfulness: 53.77322228696811
+2025-12-18 10:56:48,116 | INFO | Entropy: 5.966108322143555
+2025-12-18 10:56:48,116 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:50,287 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:50,288 | INFO | Mistral analysis complete.
+2025-12-18 10:56:50,318 | INFO | Loaded image: output/images/img_007_unnamed.png
+2025-12-18 10:56:50,373 | INFO | Image Dimensions: 1920x934
+2025-12-18 10:56:50,373 | INFO | File Size: 53820 bytes
+2025-12-18 10:56:50,388 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 10:56:50,390 | INFO | Brightness: 244.69653428354746
+2025-12-18 10:56:50,411 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 10:56:50,481 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 10:56:50,490 | INFO | Entropy: 0.792709469795227
+2025-12-18 10:56:50,490 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:52,739 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:52,754 | INFO | Mistral analysis complete.
+2025-12-18 10:56:52,791 | INFO | Loaded image: output/images/img_020_unnamed.png
+2025-12-18 10:56:52,841 | INFO | Image Dimensions: 1920x961
+2025-12-18 10:56:52,841 | INFO | File Size: 215969 bytes
+2025-12-18 10:56:52,856 | INFO | Blur (Variance of Laplacian): 502.3943299062013
+2025-12-18 10:56:52,858 | INFO | Brightness: 250.08534133281304
+2025-12-18 10:56:52,878 | INFO | Sharpness (Tenengrad): 2833.2215855879294
+2025-12-18 10:56:52,938 | INFO | Colorfulness: 7.615584349460053
+2025-12-18 10:56:52,942 | INFO | Entropy: 3.073474407196045
+2025-12-18 10:56:52,942 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:56:57,142 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:56:57,144 | INFO | Mistral analysis complete.
+2025-12-18 10:56:57,173 | INFO | Loaded image: output/images/img_004_unnamed.png
+2025-12-18 10:56:57,224 | INFO | Image Dimensions: 1920x934
+2025-12-18 10:56:57,224 | INFO | File Size: 53820 bytes
+2025-12-18 10:56:57,238 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 10:56:57,240 | INFO | Brightness: 244.69653428354746
+2025-12-18 10:56:57,262 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 10:56:57,335 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 10:56:57,346 | INFO | Entropy: 0.792709469795227
+2025-12-18 10:56:57,346 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:00,521 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:00,523 | INFO | Mistral analysis complete.
+2025-12-18 10:57:00,551 | INFO | Loaded image: output/images/img_009_unnamed.png
+2025-12-18 10:57:00,605 | INFO | Image Dimensions: 1920x934
+2025-12-18 10:57:00,606 | INFO | File Size: 53820 bytes
+2025-12-18 10:57:00,620 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 10:57:00,622 | INFO | Brightness: 244.69653428354746
+2025-12-18 10:57:00,642 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 10:57:00,711 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 10:57:00,717 | INFO | Entropy: 0.792709469795227
+2025-12-18 10:57:00,717 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:02,467 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:02,468 | INFO | Mistral analysis complete.
+2025-12-18 10:57:02,476 | INFO | Loaded image: output/svg/svg_001_unnamed.png
+2025-12-18 10:57:02,529 | INFO | Image Dimensions: 13x17
+2025-12-18 10:57:02,529 | INFO | File Size: 110 bytes
+2025-12-18 10:57:02,529 | INFO | Blur (Variance of Laplacian): 0.0
+2025-12-18 10:57:02,529 | INFO | Brightness: 247.0
+2025-12-18 10:57:02,530 | INFO | Sharpness (Tenengrad): 0.0
+2025-12-18 10:57:02,530 | INFO | Colorfulness: 13.313526955694348
+2025-12-18 10:57:02,530 | INFO | Entropy: -0.0
+2025-12-18 10:57:02,530 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:04,139 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:04,151 | INFO | Mistral analysis complete.
+2025-12-18 10:57:04,160 | INFO | Loaded image: output/svg/svg_000_unnamed.png
+2025-12-18 10:57:04,219 | INFO | Image Dimensions: 24x24
+2025-12-18 10:57:04,219 | INFO | File Size: 129 bytes
+2025-12-18 10:57:04,220 | INFO | Blur (Variance of Laplacian): 8.333333333333334
+2025-12-18 10:57:04,220 | INFO | Brightness: 246.75
+2025-12-18 10:57:04,220 | INFO | Sharpness (Tenengrad): 133.33333333333334
+2025-12-18 10:57:04,220 | INFO | Colorfulness: 15.716233645501712
+2025-12-18 10:57:04,221 | INFO | Entropy: 0.5435644388198853
+2025-12-18 10:57:04,221 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:05,083 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:05,085 | INFO | Mistral analysis complete.
+2025-12-18 10:57:05,093 | INFO | Loaded image: output/backgrounds/background_000_unnamed.png
+2025-12-18 10:57:05,155 | INFO | Image Dimensions: 44x45
+2025-12-18 10:57:05,155 | INFO | File Size: 443 bytes
+2025-12-18 10:57:05,155 | INFO | Blur (Variance of Laplacian): 1440.9727272727273
+2025-12-18 10:57:05,155 | INFO | Brightness: 248.6479797979798
+2025-12-18 10:57:05,155 | INFO | Sharpness (Tenengrad): 18739.648484848483
+2025-12-18 10:57:05,155 | INFO | Colorfulness: 0.0
+2025-12-18 10:57:05,156 | INFO | Entropy: 0.4255684018135071
+2025-12-18 10:57:05,156 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:07,153 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:07,154 | INFO | Mistral analysis complete.
+2025-12-18 10:57:07,162 | INFO | Loaded image: output/buttons/button_002_unnamed.png
+2025-12-18 10:57:07,211 | INFO | Image Dimensions: 10x11
+2025-12-18 10:57:07,212 | INFO | File Size: 328 bytes
+2025-12-18 10:57:07,212 | INFO | Blur (Variance of Laplacian): 26957.502892561984
+2025-12-18 10:57:07,212 | INFO | Brightness: 164.96363636363637
+2025-12-18 10:57:07,212 | INFO | Sharpness (Tenengrad): 221869.14545454545
+2025-12-18 10:57:07,212 | INFO | Colorfulness: 1.4109957799047774
+2025-12-18 10:57:07,213 | INFO | Entropy: 3.5945568084716797
+2025-12-18 10:57:07,213 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:08,832 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:08,833 | INFO | Mistral analysis complete.
+2025-12-18 10:57:08,841 | INFO | Loaded image: output/buttons/button_007_unnamed.png
+2025-12-18 10:57:08,902 | INFO | Image Dimensions: 126x43
+2025-12-18 10:57:08,902 | INFO | File Size: 1358 bytes
+2025-12-18 10:57:08,902 | INFO | Blur (Variance of Laplacian): 8911.713571042263
+2025-12-18 10:57:08,902 | INFO | Brightness: 79.96991509782208
+2025-12-18 10:57:08,902 | INFO | Sharpness (Tenengrad): 57664.77593207826
+2025-12-18 10:57:08,903 | INFO | Colorfulness: 91.57893037762766
+2025-12-18 10:57:08,903 | INFO | Entropy: 1.3712726831436157
+2025-12-18 10:57:08,903 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:10,466 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:10,480 | INFO | Mistral analysis complete.
+2025-12-18 10:57:10,488 | INFO | Loaded image: output/buttons/button_008_unnamed.png
+2025-12-18 10:57:10,557 | INFO | Image Dimensions: 143x43
+2025-12-18 10:57:10,557 | INFO | File Size: 2182 bytes
+2025-12-18 10:57:10,557 | INFO | Blur (Variance of Laplacian): 12329.665506406593
+2025-12-18 10:57:10,557 | INFO | Brightness: 86.05838347698813
+2025-12-18 10:57:10,557 | INFO | Sharpness (Tenengrad): 80537.39307204423
+2025-12-18 10:57:10,558 | INFO | Colorfulness: 89.67334583183138
+2025-12-18 10:57:10,558 | INFO | Entropy: 1.78660249710083
+2025-12-18 10:57:10,558 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:12,634 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:12,636 | INFO | Mistral analysis complete.
+2025-12-18 10:57:12,636 | INFO | Loaded image: output/buttons/button_004_unnamed.png
+2025-12-18 10:57:12,693 | INFO | Image Dimensions: 48x49
+2025-12-18 10:57:12,693 | INFO | File Size: 1667 bytes
+2025-12-18 10:57:12,693 | INFO | Blur (Variance of Laplacian): 8119.232181722602
+2025-12-18 10:57:12,694 | INFO | Brightness: 220.968537414966
+2025-12-18 10:57:12,694 | INFO | Sharpness (Tenengrad): 89570.39795918367
+2025-12-18 10:57:12,694 | INFO | Colorfulness: 1.8416247263362482
+2025-12-18 10:57:12,695 | INFO | Entropy: 1.9298913478851318
+2025-12-18 10:57:12,695 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:14,535 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:14,537 | INFO | Mistral analysis complete.
+2025-12-18 10:57:14,537 | INFO | Loaded image: output/buttons/button_006_unnamed.png
+2025-12-18 10:57:14,607 | INFO | Image Dimensions: 126x41
+2025-12-18 10:57:14,607 | INFO | File Size: 2029 bytes
+2025-12-18 10:57:14,607 | INFO | Blur (Variance of Laplacian): 8508.07820363918
+2025-12-18 10:57:14,607 | INFO | Brightness: 236.83643050716222
+2025-12-18 10:57:14,607 | INFO | Sharpness (Tenengrad): 56929.53000387147
+2025-12-18 10:57:14,608 | INFO | Colorfulness: 25.693421467325802
+2025-12-18 10:57:14,609 | INFO | Entropy: 1.5823800563812256
+2025-12-18 10:57:14,609 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:16,803 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:16,804 | INFO | Mistral analysis complete.
+2025-12-18 10:57:16,812 | INFO | Loaded image: output/buttons/button_005_unnamed.png
+2025-12-18 10:57:16,863 | INFO | Image Dimensions: 44x45
+2025-12-18 10:57:16,863 | INFO | File Size: 170 bytes
+2025-12-18 10:57:16,863 | INFO | Blur (Variance of Laplacian): 1520.1272727272728
+2025-12-18 10:57:16,864 | INFO | Brightness: 242.33636363636364
+2025-12-18 10:57:16,864 | INFO | Sharpness (Tenengrad): 20221.769696969695
+2025-12-18 10:57:16,864 | INFO | Colorfulness: 1.9817347772274492
+2025-12-18 10:57:16,864 | INFO | Entropy: 0.2055690586566925
+2025-12-18 10:57:16,864 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:18,135 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:18,144 | INFO | Mistral analysis complete.
+2025-12-18 10:57:18,152 | INFO | Loaded image: output/buttons/button_003_unnamed.png
+2025-12-18 10:57:18,204 | INFO | Image Dimensions: 10x11
+2025-12-18 10:57:18,204 | INFO | File Size: 270 bytes
+2025-12-18 10:57:18,204 | INFO | Blur (Variance of Laplacian): 16225.575619834712
+2025-12-18 10:57:18,204 | INFO | Brightness: 115.97272727272727
+2025-12-18 10:57:18,205 | INFO | Sharpness (Tenengrad): 124567.4
+2025-12-18 10:57:18,205 | INFO | Colorfulness: 1.044465935734187
+2025-12-18 10:57:18,205 | INFO | Entropy: 3.042686939239502
+2025-12-18 10:57:18,205 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:20,183 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:20,184 | INFO | Mistral analysis complete.
+2025-12-18 10:57:20,192 | INFO | Loaded image: output/buttons/button_001_unnamed.png
+2025-12-18 10:57:20,259 | INFO | Image Dimensions: 48x49
+2025-12-18 10:57:20,259 | INFO | File Size: 1674 bytes
+2025-12-18 10:57:20,259 | INFO | Blur (Variance of Laplacian): 8119.232181722602
+2025-12-18 10:57:20,259 | INFO | Brightness: 220.968537414966
+2025-12-18 10:57:20,259 | INFO | Sharpness (Tenengrad): 89570.39795918367
+2025-12-18 10:57:20,259 | INFO | Colorfulness: 1.8416247263362482
+2025-12-18 10:57:20,260 | INFO | Entropy: 1.9298913478851318
+2025-12-18 10:57:20,260 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:22,423 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:22,424 | INFO | Mistral analysis complete.
+2025-12-18 10:57:22,432 | INFO | Loaded image: output/buttons/button_000_unnamed.png
+2025-12-18 10:57:22,482 | INFO | Image Dimensions: 48x48
+2025-12-18 10:57:22,482 | INFO | File Size: 161 bytes
+2025-12-18 10:57:22,482 | INFO | Blur (Variance of Laplacian): 4.166666666666667
+2025-12-18 10:57:22,483 | INFO | Brightness: 244.875
+2025-12-18 10:57:22,483 | INFO | Sharpness (Tenengrad): 66.66666666666667
+2025-12-18 10:57:22,483 | INFO | Colorfulness: 18.26540445760783
+2025-12-18 10:57:22,483 | INFO | Entropy: 0.896038293838501
+2025-12-18 10:57:22,484 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:24,382 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:24,384 | INFO | Mistral analysis complete.
+2025-12-18 10:57:24,392 | INFO | Loaded image: output/buttons/button_009_unnamed.png
+2025-12-18 10:57:24,468 | INFO | Image Dimensions: 44x45
+2025-12-18 10:57:24,468 | INFO | File Size: 443 bytes
+2025-12-18 10:57:24,468 | INFO | Blur (Variance of Laplacian): 1440.9727272727273
+2025-12-18 10:57:24,469 | INFO | Brightness: 248.6479797979798
+2025-12-18 10:57:24,469 | INFO | Sharpness (Tenengrad): 18739.648484848483
+2025-12-18 10:57:24,469 | INFO | Colorfulness: 0.0
+2025-12-18 10:57:24,470 | INFO | Entropy: 0.4255684018135071
+2025-12-18 10:57:24,470 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:27,100 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:27,110 | INFO | Mistral analysis complete.
+2025-12-18 10:57:27,118 | INFO | Loaded image: output/icons/icon_001_unnamed.png
+2025-12-18 10:57:27,170 | INFO | Image Dimensions: 17x18
+2025-12-18 10:57:27,170 | INFO | File Size: 546 bytes
+2025-12-18 10:57:27,171 | INFO | Blur (Variance of Laplacian): 13112.112830535265
+2025-12-18 10:57:27,171 | INFO | Brightness: 218.66666666666666
+2025-12-18 10:57:27,171 | INFO | Sharpness (Tenengrad): 133911.02614379086
+2025-12-18 10:57:27,171 | INFO | Colorfulness: 57.29897368732633
+2025-12-18 10:57:27,171 | INFO | Entropy: 2.7739734649658203
+2025-12-18 10:57:27,171 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:29,193 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:29,195 | INFO | Mistral analysis complete.
+2025-12-18 10:57:29,196 | INFO | Loaded image: output/icons/icon_004_unnamed.png
+2025-12-18 10:57:29,246 | INFO | Image Dimensions: 20x20
+2025-12-18 10:57:29,246 | INFO | File Size: 109 bytes
+2025-12-18 10:57:29,246 | INFO | Blur (Variance of Laplacian): 0.0
+2025-12-18 10:57:29,247 | INFO | Brightness: 255.0
+2025-12-18 10:57:29,247 | INFO | Sharpness (Tenengrad): 0.0
+2025-12-18 10:57:29,247 | INFO | Colorfulness: 0.0
+2025-12-18 10:57:29,247 | INFO | Entropy: -0.0
+2025-12-18 10:57:29,247 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:30,832 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:30,833 | INFO | Mistral analysis complete.
+2025-12-18 10:57:30,841 | INFO | Loaded image: output/icons/icon_002_unnamed.png
+2025-12-18 10:57:30,894 | INFO | Image Dimensions: 23x39
+2025-12-18 10:57:30,894 | INFO | File Size: 325 bytes
+2025-12-18 10:57:30,895 | INFO | Blur (Variance of Laplacian): 1739.4983277591973
+2025-12-18 10:57:30,895 | INFO | Brightness: 248.38795986622074
+2025-12-18 10:57:30,895 | INFO | Sharpness (Tenengrad): 23283.344481605352
+2025-12-18 10:57:30,895 | INFO | Colorfulness: 24.56365584366051
+2025-12-18 10:57:30,896 | INFO | Entropy: 0.4335184693336487
+2025-12-18 10:57:30,896 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:32,951 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:32,952 | INFO | Mistral analysis complete.
+2025-12-18 10:57:32,952 | INFO | Loaded image: output/icons/icon_000_unnamed.png
+2025-12-18 10:57:33,004 | INFO | Image Dimensions: 17x18
+2025-12-18 10:57:33,004 | INFO | File Size: 644 bytes
+2025-12-18 10:57:33,004 | INFO | Blur (Variance of Laplacian): 22115.668300653593
+2025-12-18 10:57:33,004 | INFO | Brightness: 196.35294117647058
+2025-12-18 10:57:33,004 | INFO | Sharpness (Tenengrad): 136717.03267973856
+2025-12-18 10:57:33,005 | INFO | Colorfulness: 73.19989530868617
+2025-12-18 10:57:33,005 | INFO | Entropy: 3.6808958053588867
+2025-12-18 10:57:33,005 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:34,586 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:34,598 | INFO | Mistral analysis complete.
+2025-12-18 10:57:34,606 | INFO | Loaded image: output/icons/icon_003_unnamed.png
+2025-12-18 10:57:34,660 | INFO | Image Dimensions: 49x49
+2025-12-18 10:57:34,660 | INFO | File Size: 1771 bytes
+2025-12-18 10:57:34,660 | INFO | Blur (Variance of Laplacian): 6818.278272571768
+2025-12-18 10:57:34,660 | INFO | Brightness: 232.6972094960433
+2025-12-18 10:57:34,660 | INFO | Sharpness (Tenengrad): 74970.87546855478
+2025-12-18 10:57:34,661 | INFO | Colorfulness: 45.42667932506503
+2025-12-18 10:57:34,661 | INFO | Entropy: 1.9134262800216675
+2025-12-18 10:57:34,661 | INFO | Sending image to Mistral for analysis...
+2025-12-18 10:57:36,969 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 10:57:36,971 | INFO | Mistral analysis complete.
+2025-12-18 13:55:32,420 | INFO | Loaded image: output/images/img_018_unnamed.png
+2025-12-18 13:55:32,540 | INFO | Image Dimensions: 590x296
+2025-12-18 13:55:32,541 | INFO | File Size: 33787 bytes
+2025-12-18 13:55:32,550 | INFO | Blur (Variance of Laplacian): 0.6248088063142628
+2025-12-18 13:55:32,550 | INFO | Brightness: 253.83326843792946
+2025-12-18 13:55:32,555 | INFO | Sharpness (Tenengrad): 3.878469995419148
+2025-12-18 13:55:32,563 | INFO | Colorfulness: 0.6305888460133474
+2025-12-18 13:55:32,567 | INFO | Entropy: 1.9792860746383667
+2025-12-18 13:55:32,567 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:33,779 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:33,789 | INFO | Mistral analysis complete.
+2025-12-18 13:55:33,810 | INFO | Loaded image: output/images/img_021_unnamed.png
+2025-12-18 13:55:33,865 | INFO | Image Dimensions: 1920x361
+2025-12-18 13:55:33,865 | INFO | File Size: 390765 bytes
+2025-12-18 13:55:33,872 | INFO | Blur (Variance of Laplacian): 1435.8940177754976
+2025-12-18 13:55:33,873 | INFO | Brightness: 181.28218346029547
+2025-12-18 13:55:33,884 | INFO | Sharpness (Tenengrad): 9063.074189173592
+2025-12-18 13:55:33,913 | INFO | Colorfulness: 19.053483053890172
+2025-12-18 13:55:33,918 | INFO | Entropy: 5.944273948669434
+2025-12-18 13:55:33,918 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:37,872 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:37,874 | INFO | Mistral analysis complete.
+2025-12-18 13:55:37,886 | INFO | Loaded image: output/images/img_019_unnamed.png
+2025-12-18 13:55:37,939 | INFO | Image Dimensions: 590x296
+2025-12-18 13:55:37,939 | INFO | File Size: 132359 bytes
+2025-12-18 13:55:37,942 | INFO | Blur (Variance of Laplacian): 52.988749425819684
+2025-12-18 13:55:37,943 | INFO | Brightness: 240.4014544205222
+2025-12-18 13:55:37,945 | INFO | Sharpness (Tenengrad): 649.5264544205222
+2025-12-18 13:55:37,951 | INFO | Colorfulness: 7.090059770498706
+2025-12-18 13:55:37,952 | INFO | Entropy: 4.55870246887207
+2025-12-18 13:55:37,952 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:41,468 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:41,470 | INFO | Mistral analysis complete.
+2025-12-18 13:55:41,477 | INFO | Loaded image: output/images/img_024_kao_group.png
+2025-12-18 13:55:41,527 | INFO | Image Dimensions: 70x21
+2025-12-18 13:55:41,527 | INFO | File Size: 349 bytes
+2025-12-18 13:55:41,527 | INFO | Blur (Variance of Laplacian): 2761.747775926697
+2025-12-18 13:55:41,527 | INFO | Brightness: 252.1891156462585
+2025-12-18 13:55:41,527 | INFO | Sharpness (Tenengrad): 5818.574149659864
+2025-12-18 13:55:41,527 | INFO | Colorfulness: 0.0
+2025-12-18 13:55:41,528 | INFO | Entropy: 0.39334630966186523
+2025-12-18 13:55:41,528 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:42,481 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:42,482 | INFO | Mistral analysis complete.
+2025-12-18 13:55:42,512 | INFO | Loaded image: output/images/img_003_unnamed.png
+2025-12-18 13:55:42,563 | INFO | Image Dimensions: 1920x934
+2025-12-18 13:55:42,563 | INFO | File Size: 53520 bytes
+2025-12-18 13:55:42,577 | INFO | Blur (Variance of Laplacian): 338.981999387549
+2025-12-18 13:55:42,579 | INFO | Brightness: 244.7035476891506
+2025-12-18 13:55:42,600 | INFO | Sharpness (Tenengrad): 2221.039505264097
+2025-12-18 13:55:42,669 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 13:55:42,677 | INFO | Entropy: 0.7921188473701477
+2025-12-18 13:55:42,677 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:44,122 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:44,123 | INFO | Mistral analysis complete.
+2025-12-18 13:55:44,131 | INFO | Loaded image: output/images/img_022_unnamed.png
+2025-12-18 13:55:44,182 | INFO | Image Dimensions: 115x78
+2025-12-18 13:55:44,182 | INFO | File Size: 5931 bytes
+2025-12-18 13:55:44,183 | INFO | Blur (Variance of Laplacian): 1977.232800142678
+2025-12-18 13:55:44,183 | INFO | Brightness: 210.9664437012263
+2025-12-18 13:55:44,183 | INFO | Sharpness (Tenengrad): 19069.94960981048
+2025-12-18 13:55:44,183 | INFO | Colorfulness: 90.08283673883938
+2025-12-18 13:55:44,184 | INFO | Entropy: 2.69626784324646
+2025-12-18 13:55:44,184 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:45,235 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:45,241 | INFO | Mistral analysis complete.
+2025-12-18 13:55:45,249 | INFO | Loaded image: output/images/img_000_kao.png
+2025-12-18 13:55:45,298 | INFO | Image Dimensions: 90x26
+2025-12-18 13:55:45,298 | INFO | File Size: 1501 bytes
+2025-12-18 13:55:45,298 | INFO | Blur (Variance of Laplacian): 5960.959760391555
+2025-12-18 13:55:45,298 | INFO | Brightness: 204.42905982905984
+2025-12-18 13:55:45,298 | INFO | Sharpness (Tenengrad): 79813.95042735043
+2025-12-18 13:55:45,298 | INFO | Colorfulness: 105.13700819146887
+2025-12-18 13:55:45,299 | INFO | Entropy: 2.1708943843841553
+2025-12-18 13:55:45,299 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:47,293 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:47,294 | INFO | Mistral analysis complete.
+2025-12-18 13:55:47,296 | INFO | Loaded image: output/images/img_010_unnamed.png
+2025-12-18 13:55:47,346 | INFO | Image Dimensions: 1920x78
+2025-12-18 13:55:47,347 | INFO | File Size: 26878 bytes
+2025-12-18 13:55:47,347 | INFO | Blur (Variance of Laplacian): 6159.974145299146
+2025-12-18 13:55:47,348 | INFO | Brightness: 232.83164396367522
+2025-12-18 13:55:47,349 | INFO | Sharpness (Tenengrad): 34478.02267628205
+2025-12-18 13:55:47,352 | INFO | Colorfulness: 26.228471120439046
+2025-12-18 13:55:47,353 | INFO | Entropy: 1.6123872995376587
+2025-12-18 13:55:47,354 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:51,491 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:51,492 | INFO | Mistral analysis complete.
+2025-12-18 13:55:51,523 | INFO | Loaded image: output/images/img_002_unnamed.png
+2025-12-18 13:55:51,575 | INFO | Image Dimensions: 1920x934
+2025-12-18 13:55:51,576 | INFO | File Size: 53520 bytes
+2025-12-18 13:55:51,589 | INFO | Blur (Variance of Laplacian): 338.981999387549
+2025-12-18 13:55:51,591 | INFO | Brightness: 244.7035476891506
+2025-12-18 13:55:51,613 | INFO | Sharpness (Tenengrad): 2221.039505264097
+2025-12-18 13:55:51,681 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 13:55:51,688 | INFO | Entropy: 0.7921188473701477
+2025-12-18 13:55:51,688 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:54,562 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:54,563 | INFO | Mistral analysis complete.
+2025-12-18 13:55:54,572 | INFO | Loaded image: output/images/img_001_kirei_making_life_beautiful.png
+2025-12-18 13:55:54,629 | INFO | Image Dimensions: 700x52
+2025-12-18 13:55:54,629 | INFO | File Size: 22364 bytes
+2025-12-18 13:55:54,630 | INFO | Blur (Variance of Laplacian): 774.8765814394396
+2025-12-18 13:55:54,630 | INFO | Brightness: 235.31277472527472
+2025-12-18 13:55:54,630 | INFO | Sharpness (Tenengrad): 16707.793626373626
+2025-12-18 13:55:54,631 | INFO | Colorfulness: 25.13407468288489
+2025-12-18 13:55:54,632 | INFO | Entropy: 3.523881196975708
+2025-12-18 13:55:54,632 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:57,653 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:57,654 | INFO | Mistral analysis complete.
+2025-12-18 13:55:57,664 | INFO | Loaded image: output/images/img_013_unnamed.png
+2025-12-18 13:55:57,715 | INFO | Image Dimensions: 397x265
+2025-12-18 13:55:57,715 | INFO | File Size: 4051 bytes
+2025-12-18 13:55:57,716 | INFO | Blur (Variance of Laplacian): 87.42208623044046
+2025-12-18 13:55:57,716 | INFO | Brightness: 245.2256736847108
+2025-12-18 13:55:57,718 | INFO | Sharpness (Tenengrad): 1277.891354973623
+2025-12-18 13:55:57,719 | INFO | Colorfulness: 1.9977745329376289
+2025-12-18 13:55:57,721 | INFO | Entropy: 0.17292869091033936
+2025-12-18 13:55:57,721 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:55:58,865 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:55:58,866 | INFO | Mistral analysis complete.
+2025-12-18 13:55:58,898 | INFO | Loaded image: output/images/img_005_unnamed.png
+2025-12-18 13:55:58,951 | INFO | Image Dimensions: 1920x934
+2025-12-18 13:55:58,951 | INFO | File Size: 53820 bytes
+2025-12-18 13:55:58,966 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 13:55:58,969 | INFO | Brightness: 244.69653428354746
+2025-12-18 13:55:58,993 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 13:55:59,060 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 13:55:59,067 | INFO | Entropy: 0.792709469795227
+2025-12-18 13:55:59,068 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:00,504 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:00,505 | INFO | Mistral analysis complete.
+2025-12-18 13:56:00,520 | INFO | Loaded image: output/images/img_017_unnamed.png
+2025-12-18 13:56:00,581 | INFO | Image Dimensions: 590x296
+2025-12-18 13:56:00,581 | INFO | File Size: 132494 bytes
+2025-12-18 13:56:00,582 | INFO | Blur (Variance of Laplacian): 1139.472152061382
+2025-12-18 13:56:00,583 | INFO | Brightness: 213.0117727897389
+2025-12-18 13:56:00,585 | INFO | Sharpness (Tenengrad): 11176.724530462667
+2025-12-18 13:56:00,590 | INFO | Colorfulness: 30.077952457920492
+2025-12-18 13:56:00,591 | INFO | Entropy: 5.515491962432861
+2025-12-18 13:56:00,591 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:03,371 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:03,373 | INFO | Mistral analysis complete.
+2025-12-18 13:56:03,382 | INFO | Loaded image: output/images/img_015_unnamed.png
+2025-12-18 13:56:03,435 | INFO | Image Dimensions: 397x265
+2025-12-18 13:56:03,435 | INFO | File Size: 4496 bytes
+2025-12-18 13:56:03,436 | INFO | Blur (Variance of Laplacian): 374.00385242243226
+2025-12-18 13:56:03,436 | INFO | Brightness: 244.3986217385105
+2025-12-18 13:56:03,437 | INFO | Sharpness (Tenengrad): 5493.147892210446
+2025-12-18 13:56:03,439 | INFO | Colorfulness: 1.9899586338134694
+2025-12-18 13:56:03,440 | INFO | Entropy: 0.1810166835784912
+2025-12-18 13:56:03,440 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:04,434 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:04,456 | INFO | Mistral analysis complete.
+2025-12-18 13:56:04,486 | INFO | Loaded image: output/images/img_008_unnamed.png
+2025-12-18 13:56:04,536 | INFO | Image Dimensions: 1920x934
+2025-12-18 13:56:04,536 | INFO | File Size: 53820 bytes
+2025-12-18 13:56:04,550 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 13:56:04,552 | INFO | Brightness: 244.69653428354746
+2025-12-18 13:56:04,570 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 13:56:04,639 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 13:56:04,644 | INFO | Entropy: 0.792709469795227
+2025-12-18 13:56:04,645 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:07,467 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:07,469 | INFO | Mistral analysis complete.
+2025-12-18 13:56:07,477 | INFO | Loaded image: output/images/img_011_unnamed.png
+2025-12-18 13:56:07,528 | INFO | Image Dimensions: 396x264
+2025-12-18 13:56:07,528 | INFO | File Size: 1941 bytes
+2025-12-18 13:56:07,529 | INFO | Blur (Variance of Laplacian): 0.14686638532883345
+2025-12-18 13:56:07,530 | INFO | Brightness: 245.97445094888278
+2025-12-18 13:56:07,531 | INFO | Sharpness (Tenengrad): 1.8410238751147843
+2025-12-18 13:56:07,532 | INFO | Colorfulness: 2.0
+2025-12-18 13:56:07,533 | INFO | Entropy: 0.10217796266078949
+2025-12-18 13:56:07,533 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:08,592 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:08,594 | INFO | Mistral analysis complete.
+2025-12-18 13:56:08,602 | INFO | Loaded image: output/images/img_023_unnamed.png
+2025-12-18 13:56:08,653 | INFO | Image Dimensions: 115x77
+2025-12-18 13:56:08,653 | INFO | File Size: 4677 bytes
+2025-12-18 13:56:08,653 | INFO | Blur (Variance of Laplacian): 1334.8237152109668
+2025-12-18 13:56:08,653 | INFO | Brightness: 244.55742518351215
+2025-12-18 13:56:08,654 | INFO | Sharpness (Tenengrad): 18844.648221343872
+2025-12-18 13:56:08,654 | INFO | Colorfulness: 45.42685901584185
+2025-12-18 13:56:08,655 | INFO | Entropy: 1.9204747676849365
+2025-12-18 13:56:08,655 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:09,618 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:09,619 | INFO | Mistral analysis complete.
+2025-12-18 13:56:09,649 | INFO | Loaded image: output/images/img_006_unnamed.png
+2025-12-18 13:56:09,700 | INFO | Image Dimensions: 1920x934
+2025-12-18 13:56:09,700 | INFO | File Size: 53820 bytes
+2025-12-18 13:56:09,714 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 13:56:09,716 | INFO | Brightness: 244.69653428354746
+2025-12-18 13:56:09,737 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 13:56:09,802 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 13:56:09,808 | INFO | Entropy: 0.792709469795227
+2025-12-18 13:56:09,808 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:11,356 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:11,366 | INFO | Mistral analysis complete.
+2025-12-18 13:56:11,376 | INFO | Loaded image: output/images/img_014_unnamed.png
+2025-12-18 13:56:11,429 | INFO | Image Dimensions: 396x265
+2025-12-18 13:56:11,429 | INFO | File Size: 4272 bytes
+2025-12-18 13:56:11,430 | INFO | Blur (Variance of Laplacian): 200.82085335339502
+2025-12-18 13:56:11,431 | INFO | Brightness: 244.82776824852297
+2025-12-18 13:56:11,432 | INFO | Sharpness (Tenengrad): 3010.8756622832093
+2025-12-18 13:56:11,434 | INFO | Colorfulness: 1.9917712365284554
+2025-12-18 13:56:11,435 | INFO | Entropy: 0.17608317732810974
+2025-12-18 13:56:11,435 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:14,229 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:14,231 | INFO | Mistral analysis complete.
+2025-12-18 13:56:14,241 | INFO | Loaded image: output/images/img_012_unnamed.png
+2025-12-18 13:56:14,297 | INFO | Image Dimensions: 397x265
+2025-12-18 13:56:14,297 | INFO | File Size: 3356 bytes
+2025-12-18 13:56:14,298 | INFO | Blur (Variance of Laplacian): 12.113828385339978
+2025-12-18 13:56:14,298 | INFO | Brightness: 245.71221900099806
+2025-12-18 13:56:14,299 | INFO | Sharpness (Tenengrad): 174.95046813364385
+2025-12-18 13:56:14,301 | INFO | Colorfulness: 1.9995579569476885
+2025-12-18 13:56:14,302 | INFO | Entropy: 0.1552443653345108
+2025-12-18 13:56:14,302 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:17,023 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:17,024 | INFO | Mistral analysis complete.
+2025-12-18 13:56:17,037 | INFO | Loaded image: output/images/img_016_unnamed.png
+2025-12-18 13:56:17,097 | INFO | Image Dimensions: 590x296
+2025-12-18 13:56:17,097 | INFO | File Size: 124973 bytes
+2025-12-18 13:56:17,099 | INFO | Blur (Variance of Laplacian): 2369.9625277463333
+2025-12-18 13:56:17,099 | INFO | Brightness: 190.66550618415025
+2025-12-18 13:56:17,101 | INFO | Sharpness (Tenengrad): 11415.546953733394
+2025-12-18 13:56:17,105 | INFO | Colorfulness: 53.77322228696811
+2025-12-18 13:56:17,106 | INFO | Entropy: 5.966108322143555
+2025-12-18 13:56:17,107 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:20,470 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:20,472 | INFO | Mistral analysis complete.
+2025-12-18 13:56:20,503 | INFO | Loaded image: output/images/img_007_unnamed.png
+2025-12-18 13:56:20,554 | INFO | Image Dimensions: 1920x934
+2025-12-18 13:56:20,554 | INFO | File Size: 53820 bytes
+2025-12-18 13:56:20,568 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 13:56:20,571 | INFO | Brightness: 244.69653428354746
+2025-12-18 13:56:20,592 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 13:56:20,658 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 13:56:20,664 | INFO | Entropy: 0.792709469795227
+2025-12-18 13:56:20,664 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:23,420 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:23,430 | INFO | Mistral analysis complete.
+2025-12-18 13:56:23,459 | INFO | Loaded image: output/images/img_020_unnamed.png
+2025-12-18 13:56:23,513 | INFO | Image Dimensions: 1920x961
+2025-12-18 13:56:23,513 | INFO | File Size: 215969 bytes
+2025-12-18 13:56:23,527 | INFO | Blur (Variance of Laplacian): 502.3943299062013
+2025-12-18 13:56:23,529 | INFO | Brightness: 250.08534133281304
+2025-12-18 13:56:23,547 | INFO | Sharpness (Tenengrad): 2833.2215855879294
+2025-12-18 13:56:23,609 | INFO | Colorfulness: 7.615584349460053
+2025-12-18 13:56:23,614 | INFO | Entropy: 3.073474407196045
+2025-12-18 13:56:23,614 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:26,128 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:26,130 | INFO | Mistral analysis complete.
+2025-12-18 13:56:26,159 | INFO | Loaded image: output/images/img_004_unnamed.png
+2025-12-18 13:56:26,211 | INFO | Image Dimensions: 1920x934
+2025-12-18 13:56:26,211 | INFO | File Size: 53820 bytes
+2025-12-18 13:56:26,222 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 13:56:26,224 | INFO | Brightness: 244.69653428354746
+2025-12-18 13:56:26,242 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 13:56:26,305 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 13:56:26,312 | INFO | Entropy: 0.792709469795227
+2025-12-18 13:56:26,312 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:28,867 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:28,869 | INFO | Mistral analysis complete.
+2025-12-18 13:56:28,899 | INFO | Loaded image: output/images/img_009_unnamed.png
+2025-12-18 13:56:28,949 | INFO | Image Dimensions: 1920x934
+2025-12-18 13:56:28,949 | INFO | File Size: 53820 bytes
+2025-12-18 13:56:28,961 | INFO | Blur (Variance of Laplacian): 340.57300915735624
+2025-12-18 13:56:28,963 | INFO | Brightness: 244.69653428354746
+2025-12-18 13:56:28,981 | INFO | Sharpness (Tenengrad): 2241.730364471806
+2025-12-18 13:56:29,053 | INFO | Colorfulness: 8.348541064719383
+2025-12-18 13:56:29,059 | INFO | Entropy: 0.792709469795227
+2025-12-18 13:56:29,059 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:31,838 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:31,839 | INFO | Mistral analysis complete.
+2025-12-18 13:56:31,847 | INFO | Loaded image: output/svg/svg_001_unnamed.png
+2025-12-18 13:56:31,897 | INFO | Image Dimensions: 13x17
+2025-12-18 13:56:31,897 | INFO | File Size: 110 bytes
+2025-12-18 13:56:31,897 | INFO | Blur (Variance of Laplacian): 0.0
+2025-12-18 13:56:31,897 | INFO | Brightness: 247.0
+2025-12-18 13:56:31,897 | INFO | Sharpness (Tenengrad): 0.0
+2025-12-18 13:56:31,897 | INFO | Colorfulness: 13.313526955694348
+2025-12-18 13:56:31,898 | INFO | Entropy: -0.0
+2025-12-18 13:56:31,898 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:32,861 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:32,869 | INFO | Mistral analysis complete.
+2025-12-18 13:56:32,877 | INFO | Loaded image: output/svg/svg_000_unnamed.png
+2025-12-18 13:56:32,926 | INFO | Image Dimensions: 24x24
+2025-12-18 13:56:32,927 | INFO | File Size: 129 bytes
+2025-12-18 13:56:32,927 | INFO | Blur (Variance of Laplacian): 8.333333333333334
+2025-12-18 13:56:32,928 | INFO | Brightness: 246.75
+2025-12-18 13:56:32,928 | INFO | Sharpness (Tenengrad): 133.33333333333334
+2025-12-18 13:56:32,928 | INFO | Colorfulness: 15.716233645501712
+2025-12-18 13:56:32,929 | INFO | Entropy: 0.5435644388198853
+2025-12-18 13:56:32,929 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:35,227 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:35,229 | INFO | Mistral analysis complete.
+2025-12-18 13:56:35,237 | INFO | Loaded image: output/backgrounds/background_000_unnamed.png
+2025-12-18 13:56:35,300 | INFO | Image Dimensions: 44x45
+2025-12-18 13:56:35,300 | INFO | File Size: 443 bytes
+2025-12-18 13:56:35,300 | INFO | Blur (Variance of Laplacian): 1440.9727272727273
+2025-12-18 13:56:35,300 | INFO | Brightness: 248.6479797979798
+2025-12-18 13:56:35,300 | INFO | Sharpness (Tenengrad): 18739.648484848483
+2025-12-18 13:56:35,300 | INFO | Colorfulness: 0.0
+2025-12-18 13:56:35,301 | INFO | Entropy: 0.4255684018135071
+2025-12-18 13:56:35,301 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:37,983 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:37,984 | INFO | Mistral analysis complete.
+2025-12-18 13:56:37,992 | INFO | Loaded image: output/buttons/button_002_unnamed.png
+2025-12-18 13:56:38,049 | INFO | Image Dimensions: 10x11
+2025-12-18 13:56:38,049 | INFO | File Size: 328 bytes
+2025-12-18 13:56:38,049 | INFO | Blur (Variance of Laplacian): 26957.502892561984
+2025-12-18 13:56:38,049 | INFO | Brightness: 164.96363636363637
+2025-12-18 13:56:38,049 | INFO | Sharpness (Tenengrad): 221869.14545454545
+2025-12-18 13:56:38,050 | INFO | Colorfulness: 1.4109957799047774
+2025-12-18 13:56:38,050 | INFO | Entropy: 3.5945568084716797
+2025-12-18 13:56:38,050 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:39,210 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:39,212 | INFO | Mistral analysis complete.
+2025-12-18 13:56:39,220 | INFO | Loaded image: output/buttons/button_007_unnamed.png
+2025-12-18 13:56:39,270 | INFO | Image Dimensions: 126x43
+2025-12-18 13:56:39,270 | INFO | File Size: 1358 bytes
+2025-12-18 13:56:39,270 | INFO | Blur (Variance of Laplacian): 8911.713571042263
+2025-12-18 13:56:39,270 | INFO | Brightness: 79.96991509782208
+2025-12-18 13:56:39,270 | INFO | Sharpness (Tenengrad): 57664.77593207826
+2025-12-18 13:56:39,271 | INFO | Colorfulness: 91.57893037762766
+2025-12-18 13:56:39,271 | INFO | Entropy: 1.3712726831436157
+2025-12-18 13:56:39,271 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:41,667 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:41,677 | INFO | Mistral analysis complete.
+2025-12-18 13:56:41,685 | INFO | Loaded image: output/buttons/button_008_unnamed.png
+2025-12-18 13:56:41,734 | INFO | Image Dimensions: 143x43
+2025-12-18 13:56:41,734 | INFO | File Size: 2182 bytes
+2025-12-18 13:56:41,735 | INFO | Blur (Variance of Laplacian): 12329.665506406593
+2025-12-18 13:56:41,735 | INFO | Brightness: 86.05838347698813
+2025-12-18 13:56:41,735 | INFO | Sharpness (Tenengrad): 80537.39307204423
+2025-12-18 13:56:41,736 | INFO | Colorfulness: 89.67334583183138
+2025-12-18 13:56:41,737 | INFO | Entropy: 1.78660249710083
+2025-12-18 13:56:41,737 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:42,794 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:42,796 | INFO | Mistral analysis complete.
+2025-12-18 13:56:42,803 | INFO | Loaded image: output/buttons/button_004_unnamed.png
+2025-12-18 13:56:42,853 | INFO | Image Dimensions: 48x49
+2025-12-18 13:56:42,853 | INFO | File Size: 1667 bytes
+2025-12-18 13:56:42,853 | INFO | Blur (Variance of Laplacian): 8119.232181722602
+2025-12-18 13:56:42,853 | INFO | Brightness: 220.968537414966
+2025-12-18 13:56:42,853 | INFO | Sharpness (Tenengrad): 89570.39795918367
+2025-12-18 13:56:42,854 | INFO | Colorfulness: 1.8416247263362482
+2025-12-18 13:56:42,854 | INFO | Entropy: 1.9298913478851318
+2025-12-18 13:56:42,854 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:45,048 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:45,049 | INFO | Mistral analysis complete.
+2025-12-18 13:56:45,057 | INFO | Loaded image: output/buttons/button_006_unnamed.png
+2025-12-18 13:56:45,110 | INFO | Image Dimensions: 126x41
+2025-12-18 13:56:45,110 | INFO | File Size: 2029 bytes
+2025-12-18 13:56:45,110 | INFO | Blur (Variance of Laplacian): 8508.07820363918
+2025-12-18 13:56:45,110 | INFO | Brightness: 236.83643050716222
+2025-12-18 13:56:45,111 | INFO | Sharpness (Tenengrad): 56929.53000387147
+2025-12-18 13:56:45,111 | INFO | Colorfulness: 25.693421467325802
+2025-12-18 13:56:45,112 | INFO | Entropy: 1.5823800563812256
+2025-12-18 13:56:45,112 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:46,096 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:46,097 | INFO | Mistral analysis complete.
+2025-12-18 13:56:46,105 | INFO | Loaded image: output/buttons/button_005_unnamed.png
+2025-12-18 13:56:46,158 | INFO | Image Dimensions: 44x45
+2025-12-18 13:56:46,158 | INFO | File Size: 170 bytes
+2025-12-18 13:56:46,158 | INFO | Blur (Variance of Laplacian): 1520.1272727272728
+2025-12-18 13:56:46,158 | INFO | Brightness: 242.33636363636364
+2025-12-18 13:56:46,158 | INFO | Sharpness (Tenengrad): 20221.769696969695
+2025-12-18 13:56:46,159 | INFO | Colorfulness: 1.9817347772274492
+2025-12-18 13:56:46,159 | INFO | Entropy: 0.2055690586566925
+2025-12-18 13:56:46,159 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:48,451 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:48,462 | INFO | Mistral analysis complete.
+2025-12-18 13:56:48,470 | INFO | Loaded image: output/buttons/button_003_unnamed.png
+2025-12-18 13:56:48,523 | INFO | Image Dimensions: 10x11
+2025-12-18 13:56:48,523 | INFO | File Size: 270 bytes
+2025-12-18 13:56:48,523 | INFO | Blur (Variance of Laplacian): 16225.575619834712
+2025-12-18 13:56:48,524 | INFO | Brightness: 115.97272727272727
+2025-12-18 13:56:48,524 | INFO | Sharpness (Tenengrad): 124567.4
+2025-12-18 13:56:48,524 | INFO | Colorfulness: 1.044465935734187
+2025-12-18 13:56:48,524 | INFO | Entropy: 3.042686939239502
+2025-12-18 13:56:48,524 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:49,655 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:49,656 | INFO | Mistral analysis complete.
+2025-12-18 13:56:49,664 | INFO | Loaded image: output/buttons/button_001_unnamed.png
+2025-12-18 13:56:49,720 | INFO | Image Dimensions: 48x49
+2025-12-18 13:56:49,720 | INFO | File Size: 1674 bytes
+2025-12-18 13:56:49,720 | INFO | Blur (Variance of Laplacian): 8119.232181722602
+2025-12-18 13:56:49,720 | INFO | Brightness: 220.968537414966
+2025-12-18 13:56:49,721 | INFO | Sharpness (Tenengrad): 89570.39795918367
+2025-12-18 13:56:49,721 | INFO | Colorfulness: 1.8416247263362482
+2025-12-18 13:56:49,722 | INFO | Entropy: 1.9298913478851318
+2025-12-18 13:56:49,722 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:50,679 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:50,680 | INFO | Mistral analysis complete.
+2025-12-18 13:56:50,688 | INFO | Loaded image: output/buttons/button_000_unnamed.png
+2025-12-18 13:56:50,747 | INFO | Image Dimensions: 48x48
+2025-12-18 13:56:50,747 | INFO | File Size: 161 bytes
+2025-12-18 13:56:50,747 | INFO | Blur (Variance of Laplacian): 4.166666666666667
+2025-12-18 13:56:50,747 | INFO | Brightness: 244.875
+2025-12-18 13:56:50,748 | INFO | Sharpness (Tenengrad): 66.66666666666667
+2025-12-18 13:56:50,748 | INFO | Colorfulness: 18.26540445760783
+2025-12-18 13:56:50,748 | INFO | Entropy: 0.896038293838501
+2025-12-18 13:56:50,748 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:53,238 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:53,240 | INFO | Mistral analysis complete.
+2025-12-18 13:56:53,248 | INFO | Loaded image: output/buttons/button_009_unnamed.png
+2025-12-18 13:56:53,304 | INFO | Image Dimensions: 44x45
+2025-12-18 13:56:53,304 | INFO | File Size: 443 bytes
+2025-12-18 13:56:53,304 | INFO | Blur (Variance of Laplacian): 1440.9727272727273
+2025-12-18 13:56:53,305 | INFO | Brightness: 248.6479797979798
+2025-12-18 13:56:53,305 | INFO | Sharpness (Tenengrad): 18739.648484848483
+2025-12-18 13:56:53,305 | INFO | Colorfulness: 0.0
+2025-12-18 13:56:53,306 | INFO | Entropy: 0.4255684018135071
+2025-12-18 13:56:53,306 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:54,263 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:54,272 | INFO | Mistral analysis complete.
+2025-12-18 13:56:54,280 | INFO | Loaded image: output/icons/icon_001_unnamed.png
+2025-12-18 13:56:54,335 | INFO | Image Dimensions: 17x18
+2025-12-18 13:56:54,335 | INFO | File Size: 546 bytes
+2025-12-18 13:56:54,335 | INFO | Blur (Variance of Laplacian): 13112.112830535265
+2025-12-18 13:56:54,335 | INFO | Brightness: 218.66666666666666
+2025-12-18 13:56:54,335 | INFO | Sharpness (Tenengrad): 133911.02614379086
+2025-12-18 13:56:54,336 | INFO | Colorfulness: 57.29897368732633
+2025-12-18 13:56:54,336 | INFO | Entropy: 2.7739734649658203
+2025-12-18 13:56:54,336 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:56,618 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:56,619 | INFO | Mistral analysis complete.
+2025-12-18 13:56:56,627 | INFO | Loaded image: output/icons/icon_004_unnamed.png
+2025-12-18 13:56:56,676 | INFO | Image Dimensions: 20x20
+2025-12-18 13:56:56,677 | INFO | File Size: 109 bytes
+2025-12-18 13:56:56,677 | INFO | Blur (Variance of Laplacian): 0.0
+2025-12-18 13:56:56,677 | INFO | Brightness: 255.0
+2025-12-18 13:56:56,677 | INFO | Sharpness (Tenengrad): 0.0
+2025-12-18 13:56:56,677 | INFO | Colorfulness: 0.0
+2025-12-18 13:56:56,678 | INFO | Entropy: -0.0
+2025-12-18 13:56:56,678 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:56:58,769 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:56:58,770 | INFO | Mistral analysis complete.
+2025-12-18 13:56:58,770 | INFO | Loaded image: output/icons/icon_002_unnamed.png
+2025-12-18 13:56:58,820 | INFO | Image Dimensions: 23x39
+2025-12-18 13:56:58,820 | INFO | File Size: 325 bytes
+2025-12-18 13:56:58,820 | INFO | Blur (Variance of Laplacian): 1739.4983277591973
+2025-12-18 13:56:58,820 | INFO | Brightness: 248.38795986622074
+2025-12-18 13:56:58,820 | INFO | Sharpness (Tenengrad): 23283.344481605352
+2025-12-18 13:56:58,820 | INFO | Colorfulness: 24.56365584366051
+2025-12-18 13:56:58,821 | INFO | Entropy: 0.4335184693336487
+2025-12-18 13:56:58,821 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:57:00,717 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:57:00,718 | INFO | Mistral analysis complete.
+2025-12-18 13:57:00,726 | INFO | Loaded image: output/icons/icon_000_unnamed.png
+2025-12-18 13:57:00,777 | INFO | Image Dimensions: 17x18
+2025-12-18 13:57:00,777 | INFO | File Size: 644 bytes
+2025-12-18 13:57:00,777 | INFO | Blur (Variance of Laplacian): 22115.668300653593
+2025-12-18 13:57:00,777 | INFO | Brightness: 196.35294117647058
+2025-12-18 13:57:00,777 | INFO | Sharpness (Tenengrad): 136717.03267973856
+2025-12-18 13:57:00,777 | INFO | Colorfulness: 73.19989530868617
+2025-12-18 13:57:00,778 | INFO | Entropy: 3.6808958053588867
+2025-12-18 13:57:00,778 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:57:03,069 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:57:03,078 | INFO | Mistral analysis complete.
+2025-12-18 13:57:03,086 | INFO | Loaded image: output/icons/icon_003_unnamed.png
+2025-12-18 13:57:03,136 | INFO | Image Dimensions: 49x49
+2025-12-18 13:57:03,136 | INFO | File Size: 1771 bytes
+2025-12-18 13:57:03,137 | INFO | Blur (Variance of Laplacian): 6818.278272571768
+2025-12-18 13:57:03,137 | INFO | Brightness: 232.6972094960433
+2025-12-18 13:57:03,137 | INFO | Sharpness (Tenengrad): 74970.87546855478
+2025-12-18 13:57:03,137 | INFO | Colorfulness: 45.42667932506503
+2025-12-18 13:57:03,138 | INFO | Entropy: 1.9134262800216675
+2025-12-18 13:57:03,138 | INFO | Sending image to Mistral for analysis...
+2025-12-18 13:57:04,198 | INFO | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-18 13:57:04,199 | INFO | Mistral analysis complete.
