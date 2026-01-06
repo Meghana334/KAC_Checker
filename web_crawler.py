@@ -96,6 +96,14 @@ class WebCrawler:
     ) -> Optional[str]:
         """Capture screenshot of a single element."""
         try:
+            # Scroll element into view
+            try:
+                await element.scroll_into_view_if_needed(timeout=2000)
+                # Small wait for lazy loading / render
+                await asyncio.sleep(0.5)
+            except Exception:
+                pass # Ignore scroll errors, try capturing anyway
+
             # Check if element is visible
             is_visible = await element.is_visible()
             if not is_visible:
@@ -138,6 +146,92 @@ class WebCrawler:
         except Exception as e:
             logger.warning(f"Failed to capture {element_type} {index}: {e}")
             return None
+
+    async def capture_state_screenshot(
+        self,
+        element: ElementHandle,
+        element_type: str,
+        index: int,
+        state: str,
+        base_filename: str
+    ) -> Optional[str]:
+        """Capture screenshot of an element in a specific state (hover, focus)."""
+        try:
+            # Trigger state
+            if state == "hover":
+                await element.hover()
+            elif state == "focus":
+                await element.focus()
+            
+            # Brief wait for transition
+            await asyncio.sleep(0.3)
+            
+            filename = f"{base_filename}_{state}.png"
+            
+            # Determine output subdirectory (same logic as main capture)
+            if element_type == "button":
+                filepath = self.dirs["buttons"] / filename
+            else:
+                 # Default to buttons dir or create specific if needed for other interactive elements
+                 # For now, we only really do this for buttons/interactive
+                filepath = self.dirs["buttons"] / filename
+
+            await element.screenshot(path=str(filepath))
+            logger.info(f"Captured {state} state: {filename}")
+            self.screenshot_count += 1
+            
+            # Reset state (rough attempt)
+            if state == "hover":
+                # Hover somewhere else?
+                pass 
+            
+            return str(filepath.relative_to(self.dirs["base"]))
+
+        except Exception as e:
+            logger.debug(f"Failed to capture {state} state for {element_type} {index}: {e}")
+            return None
+
+    async def capture_full_page(self, page: Page):
+        """Capture a full page screenshot."""
+        try:
+            filename = "full_page.png"
+            filepath = self.dirs["base"] / filename
+            await page.screenshot(path=str(filepath), full_page=True)
+            logger.info(f"Captured Full Page Screenshot: {filepath}")
+            self.screenshot_count += 1
+            
+            # Add to manifest
+            self.manifest.append({
+                "type": "full_page",
+                "index": 0,
+                "screenshot": filename
+            })
+        except Exception as e:
+            logger.error(f"Failed to capture full page screenshot: {e}")
+    
+    async def auto_scroll(self, page: Page):
+        """Scrolls the page to trigger lazy loading."""
+        logger.info("Auto-scrolling page to trigger lazy loading...")
+        await page.evaluate("""
+            async () => {
+                await new Promise((resolve) => {
+                    var totalHeight = 0;
+                    var distance = 200;
+                    var timer = setInterval(() => {
+                        var scrollHeight = document.body.scrollHeight;
+                        window.scrollBy(0, distance);
+                        totalHeight += distance;
+                        if(totalHeight >= scrollHeight){
+                            clearInterval(timer);
+                            resolve();
+                        }
+                    }, 50);
+                });
+            }
+        """)
+        # Scroll back to top
+        await page.evaluate("window.scrollTo(0, 0)")
+        await asyncio.sleep(1)
     
     async def extract_images(self, page: Page):
         """Extract and screenshot all image elements."""
@@ -416,6 +510,21 @@ class WebCrawler:
                 
                 if screenshot_path:
                     metadata["screenshot"] = screenshot_path
+                    
+                    # Capture States for interactive elements
+                    # Generate base filename for states from the main screenshot path
+                    base_name = Path(screenshot_path).stem
+                    
+                    # Hover
+                    hover_path = await self.capture_state_screenshot(button, "button", captured, "hover", base_name)
+                    if hover_path:
+                        metadata["screenshot_hover"] = hover_path
+                        
+                    # Focus
+                    focus_path = await self.capture_state_screenshot(button, "button", captured, "focus", base_name)
+                    if focus_path:
+                        metadata["screenshot_focus"] = focus_path
+
                     self.manifest.append(metadata)
                     self.captured_button_signatures.add(signature)
                     captured += 1
@@ -447,6 +556,12 @@ class WebCrawler:
                 # Wait a bit for dynamic content
                 await page.wait_for_timeout(3000)
                 
+                # Auto-scroll to trigger lazy loading
+                await self.auto_scroll(page)
+                
+                # Capture Full Page Screenshot
+                await self.capture_full_page(page)
+
                 # Extract all visual elements
                 await self.extract_images(page)
                 await self.extract_svg_elements(page)
@@ -478,30 +593,91 @@ class WebCrawler:
 # Main Entry Point
 # ---------------------------
 
+
+# ---------------------------
+# Main Entry Point
+# ---------------------------
+
 async def main():
     import argparse
+
+    from visual_analyser import process_directory
     
     parser = argparse.ArgumentParser(
         description="Crawl a website and capture screenshots of visual elements"
     )
+    # Changed to accept multiple URLs
     parser.add_argument(
-        "--url",
+        "--urls",
+        nargs='+',
+        default=[DEFAULT_URL],
+        help=f"List of URLs to crawl (default: {DEFAULT_URL})"
+    )
+    # Added option for file input
+    parser.add_argument(
+        "--file",
         type=str,
-        default=DEFAULT_URL,
-        help=f"URL to crawl (default: {DEFAULT_URL})"
+        help="Path to a text file containing URLs (one per line)"
     )
     parser.add_argument(
         "--output",
         type=str,
         default=DEFAULT_OUTPUT_DIR,
-        help=f"Output directory (default: {DEFAULT_OUTPUT_DIR})"
+        help=f"Base output directory (default: {DEFAULT_OUTPUT_DIR})"
     )
     
     args = parser.parse_args()
-    
-    crawler = WebCrawler(url=args.url, output_dir=args.output)
-    await crawler.crawl()
 
+    # Collect all URLs to process
+    urls_to_crawl = []
+    if args.file:
+        try:
+            with open(args.file, 'r') as f:
+                file_urls = [line.strip() for line in f if line.strip()]
+                urls_to_crawl.extend(file_urls)
+        except Exception as e:
+            logger.error(f"Error reading URL file: {e}")
+            return
+
+    if args.urls:
+         if not args.file:
+             urls_to_crawl.extend(args.urls)
+         elif args.urls != [DEFAULT_URL]:
+             urls_to_crawl.extend(args.urls)
+
+    # Dedup URLs
+    urls_to_crawl = list(set(urls_to_crawl))
+
+    if not urls_to_crawl:
+        logger.error("No URLs provided to crawl.")
+        return
+    logger.info(f"Starting batch crawl for {len(urls_to_crawl)} URLs...")
+
+    for url in urls_to_crawl:
+        try:
+            # Create a unique sub-directory for this URL
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            sanitized_name = sanitize_filename(urlparse(url).netloc, max_length=30)
+            run_output_dir = os.path.join(args.output, f"{sanitized_name}_{timestamp}")
+            
+            logger.info(f"Processing URL: {url} -> {run_output_dir}")
+            
+            crawler = WebCrawler(url=url, output_dir=run_output_dir)
+            await crawler.crawl()
+            
+            # Run Visual Analysis
+            logger.info("Starting Visual Analysis...")
+            try:
+                process_directory(run_output_dir)
+            except Exception as e:
+                logger.error(f"Visual Analysis failed: {e}")
+
+
+            
+        except Exception as e:
+            logger.error(f"Failed to process {url}: {e}", exc_info=True)
+
+    logger.info("Batch crawl completed.")
 
 if __name__ == "__main__":
     asyncio.run(main())

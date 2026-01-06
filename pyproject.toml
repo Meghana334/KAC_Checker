@@ -1,6 +1,7 @@
 [project]
 name = "kac-checker"
 version = "0.1.0"
+package-mode = false
 description = ""
 authors = [
     {name = "meghana334",email = "meghanayabaku@gmail.com"}
